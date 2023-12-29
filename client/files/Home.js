@@ -32,7 +32,6 @@ const Home = () => {
         <div>
           <Navbar />
           <HeroSection />
-          ;kbnerboneeneoib
           <CustomScrollbar />
         </div>
       )}
