@@ -20,3 +20,72 @@ body{
     position: fixed;
     left: 0;
 }
+.opacity_transition {
+  opacity: 0;
+  transition-duration: 1s;
+  position: absolute;
+  top: 52%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: white;
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+}
+
+.growing-circle {
+  position: absolute;
+  top: 52%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: white;
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  animation: growCircle 1.2s ease-out forwards 0s;
+}
+
+@keyframes growCircle {
+  0% {
+    opacity: 1; 
+  }
+
+  50% {
+    opacity: 1; 
+  }
+
+  100% {
+    width: max(120vw, 120vh);
+    height: max(120vw, 120vh);
+  }
+}
+
+#presenting span {
+  display: inline-block;
+  -webkit-text-fill-color: transparent;
+  background: linear-gradient(20deg, cyan, magenta);
+
+  -webkit-background-clip: text;
+}
+
+.reveal-text {
+  overflow: hidden;
+  white-space: nowrap;
+}
+
+.reveal-text span {
+  display: inline-block;
+  color: white;
+  transform: translateY(100%);
+  animation: reveal 0.5s forwards;
+  animation-delay: calc(0.03s * var(--index));
+  margin-right: 5px;
+  transition-duration: 1s;
+}
+
+@keyframes reveal {
+  to {
+    transform: translateY(0);
+  }
+}
+
