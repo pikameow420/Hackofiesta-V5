@@ -1,5 +1,7 @@
 "use client"
 import React, { useState, useEffect } from 'react';
+import Image from 'next/image';
+import ScrollDownArrow from '@/assets/scroll-down-arrow.svg';
 
 const CustomScrollbar = () => {
   const [scrollPercentage, setScrollPercentage] = useState(0);
@@ -23,10 +25,11 @@ const CustomScrollbar = () => {
   }, []);
 
   return (
-    <div className=''>
-      <p>Scroll Percentage: {scrollPercentage.toFixed(2)}%</p>
-      {/* Your content goes here */}
+    <>
+    <div className='fixed top-0 left-16 bg-primary-pink w-[1px] h-[90vh]'>
+        <div className={`bg-primary-blue`} style={{height: `${scrollPercentage.toFixed(2)}vh`, maxHeight: "90vh"}}></div>
     </div>
+    </>
   );
 };
 
