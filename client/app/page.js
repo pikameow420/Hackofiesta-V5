@@ -1,14 +1,11 @@
-import CustomScrollbar from '@/components/atoms/CustomScrollbar'
-import Navbar from '@/components/molecules/common/Navbar'
-import HeroSection from '@/components/molecules/home/HeroSection'
-import Image from 'next/image'
+import Home from '@/files/Home'
 
-export default function Home() {
+const page = () => {
   return (
     <div>
-      <Navbar />
-      <HeroSection />
-      ;kbnerboneeneoib
+      <Home />
     </div>
   )
 }
+
+export default page
