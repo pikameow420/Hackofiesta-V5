@@ -7,10 +7,15 @@ module.exports = {
   ],
   theme: {
     extend: {
+      colors: {
+        'primary-pink': "#FF00FF",
+        'primary-blue': "#03D0FF"
+      },
       backgroundImage: {
         'gradient-radial': 'radial-gradient(var(--tw-gradient-stops))',
         'gradient-conic':
           'conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))',
+        'dotted-grid': "url('../assets/dot-pattern.png')"
       },
     },
   },
