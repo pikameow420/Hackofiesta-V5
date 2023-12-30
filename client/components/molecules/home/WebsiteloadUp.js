@@ -14,7 +14,7 @@ const WebsiteLoadUp = () => {
     <div
       ref={loadUpRef}
       id="loadUp"
-      className="opacity-1 w-screen h-screen flex justify-center items-center relative transition duration-1000"
+      className="opacity-1 bg-transparent w-screen h-screen flex justify-center items-center relative transition duration-1000"
     >
       <div ref={presentRef} id="presenting" className={caveat.className}>
         <TextReveal customText="HackoFiesta" val={true} />
