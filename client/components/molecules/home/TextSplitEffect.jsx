@@ -10,6 +10,7 @@ const TextSplitEffect = () => {
   const controls = useAnimation();
   const ref1 = useRef(null);
   const ref2 = useRef(null);
+  const ref3 = useRef(null);
   const [ref, inView] = useInView();
 
   // You can customize the animation properties
@@ -29,7 +30,7 @@ const TextSplitEffect = () => {
   useEffect(() => {
     if (inView) {
       setDisplayIt(true);
-      controls.start("visible");
+    //   controls.start("visible");
     }
   }, [controls, inView]);
   useEffect(() => {
@@ -44,14 +45,11 @@ const TextSplitEffect = () => {
     }
   }, [displayIt]);
   function handleScroll() {
-    if (document.getElementById("hello") && ref1.current && ref2.current) {
+    if (ref3.current && ref1.current && ref2.current) {
       if (
         window.scrollY - 576 - window.innerHeight + 720 <= 85 &&
         window.scrollY - 576 - window.innerHeight + 720 > 0
       ) {
-        // document.getElementById("hello").style.height = `${
-        //   18 + 0.4 * (window.scrollY - 630)
-        // }vw`;
         ref1.current.style.transform = `translateY(${-Math.max(
           0,
           2.2 * (window.scrollY - 576 - window.innerHeight + 720)
@@ -60,6 +58,12 @@ const TextSplitEffect = () => {
           0,
           3.5 * (window.scrollY - 576 - window.innerHeight + 720)
         )}px)`;
+      }
+      else if (
+        window.scrollY - 576 - window.innerHeight + 720 > 85 
+      ) {
+        ref3.current.style.transitionDuration="1000ms"
+        ref3.current.style.opacity = 0;
       } else if (window.scrollY - 576 - window.innerHeight + 720 <= 0) {
         // document.getElementById("hello").style.height = "18vw";
         ref1.current.style.transform = `translateY(${-Math.max(0, 0)}px)`;
@@ -76,15 +80,13 @@ const TextSplitEffect = () => {
         ref1.current.style.transform !== "transform translateY(0px)"
       )
         setVal(true);
-      else setVal(false);
+    //   else setVal(false);
     }
     // console.log(document.getElementById("hello").style.height)
   }
   return (
     <>
-      <div
-        className="w-screen h-screen flex justify-center items-start relative text-white"
-      >
+      <div className="w-screen h-screen flex justify-center items-start relative text-white">
         <motion.div ref={ref}>
           {displayIt && (
             <>
@@ -94,7 +96,7 @@ const TextSplitEffect = () => {
                 </motion.div>
               )}
               <div
-                id="hello"
+                ref={ref3}
                 style={{
                   height: "14vw",
                   top: "20%",
