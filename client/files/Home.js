@@ -4,6 +4,7 @@ import Navbar from "@/components/molecules/common/Navbar";
 import HeroSection from "@/components/molecules/home/HeroSection";
 import React, { useEffect, useState } from "react";
 import CustomScrollbar from "@/components/atoms/CustomScrollbar";
+import OverviewComponent from "@/components/molecules/home/OverviewComponent";
 
 const Home = () => {
   const [val, setVal] = useState(false);
@@ -33,6 +34,7 @@ const Home = () => {
           <Navbar />
           <HeroSection />
           <CustomScrollbar />
+          <OverviewComponent />
         </div>
       )}
     </>

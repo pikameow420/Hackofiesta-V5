@@ -72,7 +72,7 @@ const TextReveal = ({ customText, val }) => {
   }, []);
 
   return (
-    <motion.div ref={ref} animate={controls} {...animationOptions}>
+    <motion.div ref={ref} animate={controls} {...animationOptions} className="m-0">
       <div className="reveal-text lg:text-6xl md:text-4xl sm:text-3xl text-2xl">
         {displayIt && (
           <>
