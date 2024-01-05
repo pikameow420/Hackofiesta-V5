@@ -37,7 +37,6 @@ const Home = () => {
           <Navbar />
           <HeroSection />
           <CustomScrollbar />
-          {/* <OverviewComponent /> */}
           <TextSplitEffect />
           <Stats />
         </>
