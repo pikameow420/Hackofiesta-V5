@@ -46,7 +46,7 @@ function Accordian() {
   // TODO - MID
 
   return (
-    <div className="w-screen h-screen">
+    <div className="w-screen min-h-screen bg-[#111]">
       <div className="text-7xl pt-6 pb-6 acc_style text-center text_style_gradient font-bold">
         FAQs
       </div>
