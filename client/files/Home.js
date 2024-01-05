@@ -5,7 +5,8 @@ import HeroSection from "@/components/molecules/home/HeroSection";
 import React, { useEffect, useState } from "react";
 import CustomScrollbar from "@/components/atoms/CustomScrollbar";
 import OverviewComponent from "@/components/molecules/home/OverviewComponent";
-import { MobileNavbar } from "@/components/molecules/mobile-navbar/MobileNavbar";
+import TextSplitEffect from "@/components/molecules/home/TextSplitEffect";
+import Stats from "@/components/molecules/home/Stats";
 
 const Home = () => {
   const [val, setVal] = useState(false);
@@ -36,8 +37,10 @@ const Home = () => {
           <Navbar />
           <HeroSection />
           <CustomScrollbar />
-          <OverviewComponent />
-        </>
+          {/* <OverviewComponent /> */}
+          <TextSplitEffect />
+          <Stats />
+        </div>
       )}
     </>
   );
