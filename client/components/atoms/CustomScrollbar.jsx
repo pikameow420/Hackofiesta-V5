@@ -25,7 +25,7 @@ const CustomScrollbar = () => {
 
   return (
     <>
-      <div className="fixed top-0 left-16 bg-primary-pink w-[1px] h-[90vh]">
+      <div className="fixed sm:block hidden top-0 left-16 bg-primary-pink w-[1px] h-[90vh]">
         <div
           className={`bg-primary-blue`}
           style={{
@@ -42,8 +42,19 @@ const CustomScrollbar = () => {
 export default CustomScrollbar;
 
 const DownArrow = () => {
+    const handleScrollDown = () => {
+      const viewportHeight = window.innerHeight;
+      const targetScrollPosition = window.pageYOffset + (1 * viewportHeight);
+  
+      // Scroll down to 65% of the viewport height
+      window.scrollTo({
+        top: targetScrollPosition,
+        behavior: "smooth",
+      });
+    };
+  
   return (
-    <div className=" fixed bottom-2 left-6 z-50 hover:bg-slate-300/35 transition-all hover:cursor-pointer duration-500 h-20 w-20 rounded-full flex justify-center items-center">
+    <div onClick={handleScrollDown} className=" fixed bottom-2 left-6 z-50 hover:bg-slate-300/35 transition-all hover:cursor-pointer duration-500 h-20 w-20 rounded-full flex justify-center items-center">
       <svg
         xmlns="http://www.w3.org/2000/svg"
         width="48"

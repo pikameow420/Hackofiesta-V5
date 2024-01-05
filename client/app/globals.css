@@ -169,8 +169,8 @@ body {
   width: 100px;
   padding: 5px 2px;
   text-align: center;
-  font-size: larger;
-  color: white;
+  font-size: x-large;
+  color: cyan;
   flex: 1;
   text-decoration: none;
 }

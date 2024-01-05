@@ -25,7 +25,7 @@ const OverviewComponent = () => {
     }
   }, [controls, inView]);
   return (
-    <div className="w-screen h-screen opacity-30 flex px-20 justify-center items-center flex-wrap">
+    <div className="w-screen -z-50 h-screen opacity-30 flex px-20 justify-center items-center flex-wrap">
       <motion.div ref={ref} animate={controls} {...animationOptions}>
         <div className="text-7xl text-white text-center">
           Welcome to Hackofiesta 2024!
