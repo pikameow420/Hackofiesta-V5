@@ -22,7 +22,7 @@ body {
 }
 
 .overlay {
-  @apply bg-dotted-grid h-full
+  @apply bg-dotted-grid h-full opacity-20
 }
 
 /* ::-webkit-scrollbar{
