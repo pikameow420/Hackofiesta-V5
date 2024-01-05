@@ -11,10 +11,12 @@
   "dependencies": {
     "@lobehub/ui": "^1.125.8",
     "framer-motion": "^10.16.16",
+    "lucide-react": "^0.304.0",
     "next": "14.0.4",
     "react": "^18",
     "react-dom": "^18",
-    "react-intersection-observer": "^9.5.3"
+    "react-intersection-observer": "^9.5.3",
+    "styled-components": "^6.1.6"
   },
   "devDependencies": {
     "autoprefixer": "^10.0.1",
