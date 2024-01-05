@@ -30,7 +30,7 @@ const TextSplitEffect = () => {
   useEffect(() => {
     if (inView) {
       setDisplayIt(true);
-    //   controls.start("visible");
+      //   controls.start("visible");
     }
   }, [controls, inView]);
   useEffect(() => {
@@ -58,11 +58,8 @@ const TextSplitEffect = () => {
           0,
           3.5 * (window.scrollY - 576 - window.innerHeight + 720)
         )}px)`;
-      }
-      else if (
-        window.scrollY - 576 - window.innerHeight + 720 > 85 
-      ) {
-        ref3.current.style.transitionDuration="1000ms"
+      } else if (window.scrollY - 576 - window.innerHeight + 720 > 85) {
+        ref3.current.style.transitionDuration = "1000ms";
         ref3.current.style.opacity = 0;
       } else if (window.scrollY - 576 - window.innerHeight + 720 <= 0) {
         // document.getElementById("hello").style.height = "18vw";
@@ -78,9 +75,10 @@ const TextSplitEffect = () => {
       if (
         window.scrollY - 625 - window.innerHeight + 720 > 0 &&
         ref1.current.style.transform !== "transform translateY(0px)"
-      )
+      ) {
         setVal(true);
-    //   else setVal(false);
+      }
+      //   else setVal(false);
     }
   }
   return (
@@ -89,11 +87,9 @@ const TextSplitEffect = () => {
         <motion.div ref={ref}>
           {displayIt && (
             <>
-              {val && (
-                <motion.div ref={ref} animate={controls} {...animationOptions}>
-                  <About />
-                </motion.div>
-              )}
+              <div className={val ? "opacity-100 duration-500 translate-y-0" : "opacity-0 duration-500 translate-y-12"}>
+                <About />
+              </div>
               <div
                 ref={ref3}
                 style={{
