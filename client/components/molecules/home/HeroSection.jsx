@@ -1,12 +1,15 @@
 import React, { useEffect, useRef } from "react";
 import AnimatedTitle from "../common/AnimatedTitle";
 import Timer from "@/components/atoms/Timer";
+import { MobileNavbar } from "../mobile-navbar/MobileNavbar";
 const HeroSection = () => {
   const Hack = useRef(null);
   const Fiesta = useRef(null);
   return (
     <>
-      <div className="h-screen relative mb-32">
+      <div className="h-screen w-screen relative mb-32">
+        <MobileNavbar/>
+
         <div className="-z-50 opacity-80 h-screen w-screen absolute">
           <video
             className="w-full absolute h-full object-cover brightness-[60%] transition duration-500"
@@ -16,7 +19,7 @@ const HeroSection = () => {
             src="/landing_page_bg_video.mp4"
           ></video>
         </div>
-        <div className="w-full h-full absolute overlay"></div>
+        <div className="w-screen h-full absolute overlay"></div>
         <div className="h-full pt-12  flex flex-col items-center gap-y-5 justify-center">
           <div className="flex main_heading text-white text-9xl mt-5">
             <AnimatedTitle />
@@ -26,9 +29,9 @@ const HeroSection = () => {
             adipisci perspiciatis provident at nemo consequatur necessitatibus
             laudantium iure.
           </div>
-           <div className="w-full flex justify-center items-center pt-4">
-          <Timer />
-        </div>
+          <div className="w-full flex justify-center items-center pt-4">
+            <Timer />
+          </div>
         <div className="flex justify-around md:mt-7 mt-5 md:flex-row flex-col">
           <button className="button-glitch mx-5 md:my-1 my-1">Register</button>
           <button className="button-glitch mx-5 flex  items-center md:my-1 my-1">

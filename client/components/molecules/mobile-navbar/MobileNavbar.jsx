@@ -33,7 +33,7 @@ export const MobileNavbar = () => {
   const { height } = useDimensions(containerRef);
 
   return (
-    <div className='sm:hidden fixed gap-10 justify-center font-semibold word-spacing tracking-tight text-white  top-0 z-10'>
+    <div className='sm:hidden absolute gap-10 justify-center font-semibold word-spacing tracking-tight text-white  top-0 z-10'>
     <motion.nav
       initial={false}
       animate={isOpen ? "open" : "closed"}

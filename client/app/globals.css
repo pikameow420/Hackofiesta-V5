@@ -77,7 +77,11 @@ body {
   background: linear-gradient(20deg, cyan, magenta);
   -webkit-background-clip: text;
 }
-
+.text_style_gradient{
+  -webkit-text-fill-color: transparent;
+  background: linear-gradient(20deg, cyan, magenta);
+  -webkit-background-clip: text;
+}
 .reveal-text {
   overflow: hidden;
   white-space: nowrap;
@@ -101,7 +105,7 @@ body {
 
 /* Mobile Navbar styles */
 .mobile_navbar {
-  position: fixed;
+  position: absolute;
   width: 100vw;
   height: 100vh;
 
@@ -336,4 +340,58 @@ body {
     clip-path: var(--slice-1);
     transform: translate(0);
   }
+}
+
+
+/* accordian styling */
+.accordion__header {
+  display: flex;
+  gap: 2rem;
+  align-items: center;
+  cursor: pointer;
+  padding: 1rem 2rem;
+  margin-top: -5px;
+  transition: all 0.5s;
+  @apply border-t-4 border-transparent;
+}
+.accordion__header:hover {
+  opacity: 0.6;
+}
+
+.accordion__number {
+    @apply sm:text-4xl text-3xl text-cyan-300;
+}
+.accordion__name {
+  /* font-size: 20px; */
+  @apply sm:text-3xl text-xl text-cyan-300;
+  flex: 1;
+}
+
+.accordion__details {
+  overflow: hidden;
+  height: 0;
+  color: whitesmoke;
+}
+
+.accordion__details ul {
+  @apply sm:text-2xl font-thin  text-base;
+  padding: 1rem 2rem;
+  list-style-type: circle;
+}
+.open {
+  @apply border-t-4 border-[#087f5b];
+}
+.open .accordion__header{
+  @apply border-t-4 border-[#087f5b];
+}
+
+.open .accordion__header,
+.open .accordion__number,
+.open .accordion__name {
+  @apply text-[#087f5b];
+  /* color: #087f5b; */
+}
+
+.open .accordion__details {
+  height: auto;
 }

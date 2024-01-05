@@ -7,6 +7,7 @@ import CustomScrollbar from "@/components/atoms/CustomScrollbar";
 import TextSplitEffect from "@/components/molecules/home/TextSplitEffect";
 import Stats from "@/components/molecules/home/Stats";
 import { MobileNavbar } from "@/components/molecules/mobile-navbar/MobileNavbar";
+import Accordian from "@/components/molecules/accordian/Accordian";
 
 const Home = () => {
   const [val, setVal] = useState(false);
@@ -33,12 +34,12 @@ const Home = () => {
       {!val && <WebsiteLoadUp />}
       {val && (
         <>
-          <MobileNavbar/>
           <Navbar />
           <HeroSection />
           <CustomScrollbar />
           <TextSplitEffect />
           <Stats />
+          <Accordian/>
         </>
       )}
     </>
