@@ -5,7 +5,7 @@ import { MoonStar, Palette, Zap } from "lucide-react";
 const Stats = () => {
   console.log(Features)
   return (
-    <div className="w-screen h-screen flex justify-center items-start">
+    <div className="w-screen h-screen flex justify-center items-start p-6">
       <Features
         items={[
           {

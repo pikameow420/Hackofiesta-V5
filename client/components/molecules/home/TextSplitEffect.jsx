@@ -16,7 +16,7 @@ const TextSplitEffect = () => {
   // You can customize the animation properties
   const animationVariants = {
     visible: { opacity: 1, y: 0 },
-    hidden: { opacity: 0, y: 50 },
+    hidden: { opacity: 0, y: 0 },
   };
 
   const animationOptions = {
@@ -82,7 +82,6 @@ const TextSplitEffect = () => {
         setVal(true);
     //   else setVal(false);
     }
-    // console.log(document.getElementById("hello").style.height)
   }
   return (
     <>
