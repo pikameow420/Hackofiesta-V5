@@ -16,7 +16,7 @@ const HeroSection = () => {
             autoPlay
             muted
             loop
-            src="/landing_page_bg_video.mp4"
+            src="/hero_section_video.mp4"
           ></video>
         </div>
         <div className="w-screen h-full absolute overlay"></div>

@@ -16,7 +16,6 @@ const Home = () => {
     //   setVal(true);
     // }, 7000);git 
     const loadUp = document.getElementById("loadUp");
-
     if (sessionStorage.getItem("viewed")) {
       setVal(true);
     } else {
