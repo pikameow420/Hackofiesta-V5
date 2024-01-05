@@ -4,7 +4,7 @@ const HeroSection = () => {
   const Hack = useRef(null);
   const Fiesta = useRef(null);
   return (
-    <div className="h-screen">
+    <div className="h-screen mb-32">
       <div className="overlay flex flex-col items-center gap-y-8 justify-center">
         <div className="flex main_heading text-white text-9xl">
           <AnimatedTitle/>
