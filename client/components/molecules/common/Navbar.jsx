@@ -1,14 +1,17 @@
 import Image from 'next/image'
+import Link from 'next/link'
 import React from 'react'
 const Navbar = () => {
   return (
-    <div className='flex gap-10 justify-center p-10 font-bold word-spacing tracking-tight text-white absolute w-full top-0 z-10'>
+    <>
       <img src={"/HoFRmBg.png"} width={82} className="absolute right-7 top-2" />
-        <a className='hover:text-primary-pink transition-colors' href='#'>HOME</a>
-        <a className='hover:text-primary-pink transition-colors' href='#'>WATCH ON DEMAND</a>
-        <a className='hover:text-primary-pink transition-colors' href='#'>STAY IN THE LOOP</a>
-        <a className='hover:text-primary-pink transition-colors' href='#'>PRESS ROOM</a>
+    <div className='sm:flex hidden gap-10 justify-center text-2xl px-10 py-6 font-semibold word-spacing tracking-tight text-white absolute w-full top-0 z-10'>
+        <Link className='hover:text-primary-pink transition-colors' href='/'>Home</Link>
+        <Link className='hover:text-primary-pink transition-colors' href='/about'>About</Link>
+        <Link className='hover:text-primary-pink transition-colors' href='/sponsors'>Sponsors</Link>
+        <Link className='hover:text-primary-pink transition-colors' href='/faqs'>FAQs</Link>
     </div>
+    </>
   )
 }
 

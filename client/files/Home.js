@@ -5,6 +5,7 @@ import HeroSection from "@/components/molecules/home/HeroSection";
 import React, { useEffect, useState } from "react";
 import CustomScrollbar from "@/components/atoms/CustomScrollbar";
 import OverviewComponent from "@/components/molecules/home/OverviewComponent";
+import { MobileNavbar } from "@/components/molecules/mobile-navbar/MobileNavbar";
 
 const Home = () => {
   const [val, setVal] = useState(false);
@@ -30,12 +31,13 @@ const Home = () => {
     <>
       {!val && <WebsiteLoadUp />}
       {val && (
-        <div>
+        <>
+          <MobileNavbar/>
           <Navbar />
           <HeroSection />
           <CustomScrollbar />
           <OverviewComponent />
-        </div>
+        </>
       )}
     </>
   );
