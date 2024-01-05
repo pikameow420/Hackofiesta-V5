@@ -114,7 +114,7 @@ const TextSplitEffect = () => {
                   className="mb-0 overflow-hidden"
                 >
                   <div style={{ fontSize: "10vw" }} className="h-full">
-                    What'sHackoFiesta
+                    WhatsHackoFiesta
                   </div>
                 </div>
                 <div
@@ -129,7 +129,7 @@ const TextSplitEffect = () => {
                     }}
                     className="h-full"
                   >
-                    What'sHackoFiesta
+                    WhatsHackoFiesta
                   </div>
                 </div>
               </div>
