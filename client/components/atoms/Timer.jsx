@@ -44,10 +44,10 @@ const Timer = () => {
 
 
   return (
-    <div className="md:w-max ">
+    <div className="md:w-max">
       <section className="timer-container">
         <section className="timer">
-          <div className="clock md:w-full w-max md:h-40 h-36">
+          <div className="clock md:w-full w-max md:h-32 h-32">
             <section>
               <p className="md:text-[2rem] text-[1rem]">{timerDays}</p>
               <small>Days</small>

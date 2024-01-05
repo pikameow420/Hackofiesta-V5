@@ -17,7 +17,7 @@
 }
 .clock {
     position: relative;
-    margin: a;
+    margin: 2px;
     display: flex;
     justify-content: center;
     align-items: center;
