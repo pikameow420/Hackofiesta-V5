@@ -62,12 +62,18 @@ const About = () => {
         style={{ height: "50vh" }}
       >
         <motion.div>
-          <h1 className="text-3xl text-center mb-3 sm:text-6xl xl:text-7xl xl:mt-10 xl:mb-5 ">
+          <h1 className="text-3xl text-center mb-3 sm:text-5xl xl:text-7xl xl:mt-10 xl:mb-5 ">
             HackoFiesta
           </h1>
-          <div className="text-center px-2  w-screen text-lg xl:text-4xl lg:text-3xl xl:w-[500px] xl:p-6 md:text-2xl md:w-[350px] sm:text-xl sm:w-[250px] sm:ml-8 sm:p-0">
-            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Asperiores
-            facilis ullam ratione quasi officiis, illum quam vitae, cumque qui
+          <div className="text-center px-2  w-screen text-lg xl:text-3xl lg:text-2xl xl:w-[500px] xl:p-6 md:text-2xl md:w-[350px] sm:text-xl sm:w-[250px] sm:ml-8 sm:p-0">
+            is the biggest offline hackathon in Uttar Pradesh, conducted by IIIT
+            Lucknow. Tune in to 36 hours of creativity, coding and collaboration
+            leading to some of the most innovative hacks you have ever seen.
+          </div>
+          <div className="flex justify-center">
+            <button className="button-glitch mx-5 flex items-center  md:my-1 my-3">
+              Know More
+            </button>
           </div>
         </motion.div>
         <div className="flex justify-center xl:mr-32 xl:mt-28 lg:mt-24 md:mt-20 sm:mt-16">
