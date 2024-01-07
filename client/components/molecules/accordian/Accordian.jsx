@@ -56,6 +56,7 @@ function Accordian() {
             {data.map((content, ind)=>{
                 return (
                 <div
+                key={ind}
                 className={`accordion__item md:w-4/5  w-[95%] mx-auto  ${
                     openAccordion === ind ? "open" : ""
                 }`}
@@ -73,9 +74,9 @@ function Accordian() {
 
                 <div className="accordion__details sm:px-10 px-0">
                     <ul>
-                    {content.details.map((con)=>{
+                    {content.details.map((con,ind)=>{
                       return (
-                        <li>
+                        <li key={ind}>
                           {con}
                         </li>
                       )

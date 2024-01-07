@@ -62,7 +62,7 @@ const About = () => {
         style={{ height: "50vh" }}
       >
         <motion.div>
-          <h1 className="text-3xl mb-2 lg:mb-3 xl:-mb-1 text-center sm:text-5xl xl:text-7xl xl:mt-10 ">
+          <h1 className="text-3xl mb-2 lg:mb-3 xl:-mb-1 text-center sm:text-5xl xl:text-7xl xl:mt-12 ">
             HackoFiesta
           </h1>
           <div className="text-center px-2 w-screen text-base xl:text-3xl lg:text-2xl xl:w-[500px] xl:p-6 md:text-2xl md:w-[350px] sm:text-xl sm:w-[250px] sm:ml-8 sm:p-0">

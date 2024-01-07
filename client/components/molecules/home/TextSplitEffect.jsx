@@ -87,7 +87,13 @@ const TextSplitEffect = () => {
         <motion.div ref={ref}>
           {displayIt && (
             <>
-              <div className={val ? "opacity-100 duration-500 translate-y-0" : "opacity-0 duration-500 translate-y-12"}>
+              <div
+                className={
+                  val
+                    ? "opacity-100 duration-500 translate-y-0"
+                    : "opacity-0 duration-500 translate-y-12"
+                }
+              >
                 <About />
               </div>
               <div
