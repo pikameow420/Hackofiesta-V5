@@ -2,6 +2,11 @@ import React, { useEffect, useRef } from "react";
 import AnimatedTitle from "../common/AnimatedTitle";
 import Timer from "@/components/atoms/Timer";
 import { MobileNavbar } from "../mobile-navbar/MobileNavbar";
+
+import localFont from 'next/font/local'
+const myFont = localFont({ src: '../../../public/MokotoGlitchMark.ttf' })
+
+
 const HeroSection = () => {
   const Hack = useRef(null);
   const Fiesta = useRef(null);
@@ -10,25 +15,14 @@ const HeroSection = () => {
       <div className="h-screen w-screen relative mb-32">
         <MobileNavbar/>
 
-        <div className="-z-50 opacity-80 h-screen w-screen absolute">
-          <video
-            className="w-full absolute h-full object-cover brightness-[60%] transition duration-500"
-            autoPlay
-            muted
-            loop
-            src="/hero_section_video.mp4"
-          ></video>
-        </div>
-        <div className="w-screen h-full absolute overlay"></div>
-        <div className="h-full pt-12  flex flex-col items-center gap-y-5 justify-center">
+     
+        <div className="h-full   flex flex-col items-center gap-y-5 justify-center">
           <div className="flex main_heading text-white text-9xl mt-5">
             <AnimatedTitle />
           </div>
-          <div className="second_heading md:text-base text-sm text-white text-center md:px-14 px-3 max-w-[700px]">
-            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Mollitia
-            adipisci perspiciatis provident at nemo consequatur necessitatibus
-            laudantium iure.
-          </div>
+
+          
+          
           <div className="w-full flex justify-center items-center pt-4">
             <Timer />
           </div>

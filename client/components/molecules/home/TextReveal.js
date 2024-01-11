@@ -2,6 +2,8 @@
 import React, { useEffect, useState } from "react";
 import { motion, useAnimation } from "framer-motion";
 import { useInView } from "react-intersection-observer";
+import localFont from 'next/font/local'
+const myFont = localFont({ src: '../../../public/Mokoto.ttf' })
 
 const TextReveal = ({ customText, val }) => {
   const [text, setText] = useState("");
@@ -81,6 +83,7 @@ const TextReveal = ({ customText, val }) => {
                 key={index}
                 id={"span " + (index + 1)}
                 style={{ "--index": index + 1 }}
+                className={myFont.className}
               >
                 {char === " " ? <>&nbsp;</> : char}
               </span>

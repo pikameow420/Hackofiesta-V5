@@ -8,13 +8,11 @@ import TextSplitEffect from "@/components/molecules/home/TextSplitEffect";
 import Stats from "@/components/molecules/home/Stats";
 import { MobileNavbar } from "@/components/molecules/mobile-navbar/MobileNavbar";
 import Accordian from "@/components/molecules/accordian/Accordian";
+import Footerr from "@/components/molecules/common/Footer";
 
 const Home = () => {
   const [val, setVal] = useState(false);
   useEffect(() => {
-    // setTimeout(() => {
-    //   setVal(true);
-    // }, 7000);git 
     const loadUp = document.getElementById("loadUp");
     if (sessionStorage.getItem("viewed")) {
       setVal(true);
@@ -35,10 +33,11 @@ const Home = () => {
         <>
           <Navbar />
           <HeroSection />
-          <CustomScrollbar />
+          {/* <CustomScrollbar /> */}
           <TextSplitEffect />
           <Stats />
           <Accordian/>
+          <Footerr/>
         </>
       )}
     </>

@@ -2,7 +2,9 @@ import { useEffect } from "react";
 import styled from "styled-components";
 import { useAnimation, motion } from "framer-motion";
 import { useInView } from "react-intersection-observer";
-
+import '../../../css/textanimation.css'
+import localFont from 'next/font/local'
+const myFont = localFont({ src: '../../../public/Mokoto.ttf' })
 const Title = styled.h2`
   font-size: 3rem;
   font-weight: 600;
@@ -75,18 +77,11 @@ export default function AnimatedTitle() {
             }}
             
           >
-            {word.split("").map((character, index) => {
-              return (
-                <Character
-                  aria-hidden="true"
-                  key={index}
-                  variants={characterAnimation}
-                  className="letter_animation"
-                >
-                  {character}
-                </Character>
-              );
-            })}
+          
+          <div className={myFont.className}>
+          <h2 class="hero glitch layers" data-text="Hackofiesta"><span>Hackofiesta</span></h2>
+          </div>
+           
           </Word>
         );
       })}
