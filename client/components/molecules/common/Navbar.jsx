@@ -19,7 +19,7 @@ const Navbar = () => {
 
   return (
     <div ref={refNav} className="flex sticky sm:justify-normal justify-between top-0 backdrop-blur-md z-10">
-      <img src={"/HoFRmBg.png"} width={82} className="absolute ms-5 mt-1" />
+      <img src={"/IIITL.png"} width={76} className="absolute ms-5 mt-2" />
       <div className="md:flex hidden gap-20 self-center justify-center text-xl px-10 py-8 word-spacing tracking-tight text-white  w-full top-0 z-10">
         <Link
           className="hover-underline-animation hover:text-primary-blue transition-colors"
