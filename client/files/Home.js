@@ -34,6 +34,7 @@ const Home = () => {
       {!val && <WebsiteLoadUp />}
       {val && (
         <>
+        
           <Navbar />
           <HeroSection />
 

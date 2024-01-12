@@ -458,7 +458,7 @@ body {
 }
 
 
-#accordcomp {
+#accordcomp, .new_accordcomp {
   --border-size: 1px;
   --border-angle: 0turn;
   background-image: conic-gradient(
@@ -488,4 +488,8 @@ body {
   syntax: "<angle>";
   inherits: true;
   initial-value: 0turn;
+}
+
+.card_inside_shadow{
+  box-shadow: -15px 0 30px rgba(246, 247, 247, 0.8); 
 }
