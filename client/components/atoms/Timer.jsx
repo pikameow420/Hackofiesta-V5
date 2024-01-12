@@ -47,25 +47,25 @@ const Timer = () => {
     <div className="w-max">
       <section className="timer-container">
         <section className="timer">
-          <div className="clock w-full w-max md:h-32 h-32">
+          <div className="clock w-full md:h-32 h-32">
             <section>
               <p className="md:text-[2rem] text-[1rem]">{timerDays}</p>
-              <small>Days</small>
+              <small className="text-lg">Days</small>
             </section>
             <span>:</span>
             <section>
               <p>{timerHours}</p>
-              <small>Hours</small>
+              <small className="text-lg">Hours</small>
             </section>{" "}
             <span>:</span>
             <section>
               <p>{timerMinutes}</p>
-              <small>Minutes</small>
+              <small className="text-lg">Minutes</small>
             </section>{" "}
             <span>:</span>
             <section>
               <p>{timerSeconds}</p>
-              <small>Seconds</small>
+              <small className="text-lg">Seconds</small>
             </section>
           </div>
         </section>

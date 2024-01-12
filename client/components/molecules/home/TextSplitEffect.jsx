@@ -1,6 +1,7 @@
 import React, { useEffect, useState, useRef } from "react";
 import { motion, useAnimation } from "framer-motion";
 import { useInView } from "react-intersection-observer";
+import { myFont } from "../common/AnimatedTitle";
 import About from "./About";
 
 const TextSplitEffect = () => {
@@ -34,7 +35,7 @@ const TextSplitEffect = () => {
     }
   }, [controls, inView]);
 
-  useEffect(()=>{
+  useEffect(() => {
     scrolleffectStart.current = 650;
 
     // if(window.innerWidth<640){
@@ -42,7 +43,7 @@ const TextSplitEffect = () => {
     //   console.log("hello less height")
     // }
 
-  },[])
+  }, [])
 
   useEffect(() => {
     if (displayIt) {
@@ -88,7 +89,7 @@ const TextSplitEffect = () => {
       if (
         document.body.scrollTop - scrolleffectStart.current - 49 - window.innerHeight + 720 > 0 &&
         ref1.current.style.transform !== "transform translateY(0px)"
-      ) { 
+      ) {
         setVal(true);
       }
       //   else setVal(false);
@@ -122,26 +123,26 @@ const TextSplitEffect = () => {
               >
                 <div
                   style={{
-                    height: "6vw",
+                    height: "4vw",
                   }}
                   ref={ref1}
                   className="mb-0 overflow-hidden"
                 >
-                  <div style={{ fontSize: "10vw" }} className="h-full">
+                  <div style={{ fontSize: "10vw" }} className={`h-full ${myFont.className}`}>
                     WhatsHackoFiesta
                   </div>
                 </div>
                 <div
-                  style={{ height: "4vw" }}
+                  style={{ height: "6vw" }}
                   ref={ref2}
                   className=" overflow-hidden"
                 >
                   <div
                     style={{
                       fontSize: "10vw",
-                      transform: "translateY(-6vw)",
+                      transform: "translateY(-4vw)",
                     }}
-                    className="h-full"
+                    className={`h-full ${myFont.className}`}
                   >
                     WhatsHackoFiesta
                   </div>

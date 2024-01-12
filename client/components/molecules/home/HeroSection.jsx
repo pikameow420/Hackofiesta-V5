@@ -23,10 +23,10 @@ const HeroSection = () => {
   ];
   return (
     <ThemeProvider themeMode="dark">
-      <div className="h-screen relative  flex flex-col sm:pt-0 pt-[120px] sm:justify-start"> 
-        <div className="hidden lg:block w-2.5 translate-x-1 h-2.5 bg-white rounded-full absolute right-80"></div>
+      <div className="h-screen relative  flex flex-col sm:pt-0 pt-[200px] sm:justify-start"> 
+        <div className="hidden lg:block w-2.5 translate-x-1 h-2.5 bg-white rounded-full absolute right-96"></div>
         <div className="hidden lg:block w-2.5 translate-x-1 h-2.5 bg-white rounded-full absolute right-36"></div>
-        <div className="hidden lg:block absolute w-[1px] h-10 right-80 bg-white"></div>
+        <div className="hidden lg:block absolute w-[1px] h-10 right-96 bg-white"></div>
         <div className="hidden lg:block absolute w-[1px] h-10 right-36 bg-white"></div>
         <div className="hidden lg:flex absolute right-20 top-5 justify-center items-center my-5">
           <Timer/>
