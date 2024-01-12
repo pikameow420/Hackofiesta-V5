@@ -77,7 +77,7 @@ const About = () => {
       className="flex flex-col"
     >
       <div
-        className="w-screen sm:pl-12 pr-8 ms-16 flex flex-col sm:flex-row items-center justify-around"
+        className="w-screen sm:pl-12 pr-8 ms-16 flex flex-col-reverse sm:flex-row items-center justify-around"
         style={{ height: "50vh" }}
       >
         <motion.div>

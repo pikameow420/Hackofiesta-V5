@@ -1,11 +1,16 @@
 import React from "react";
 import { Features, FeaturesProps, ThemeProvider } from "@lobehub/ui";
 import { MoonStar, Palette, Zap } from "lucide-react";
+import { myFont } from "../common/AnimatedTitle";
 
 const Stats = () => {
   console.log(Features)
   return (
     <ThemeProvider themeMode="dark">
+      
+    <div className={`md:text-8xl ${myFont.className} sm:text-6xl text-5xl text-center`}>
+            Stats
+        </div>
     <div className="w-screen flex justify-center items-start p-6 pb-40">
       <Features
         items={[
