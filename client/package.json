@@ -9,7 +9,9 @@
     "lint": "next lint"
   },
   "dependencies": {
+    "@emotion/styled": "^11.11.0",
     "@lobehub/ui": "^1.125.8",
+    "@mui/icons-material": "^5.15.4",
     "framer-motion": "^10.16.16",
     "gsap": "^3.12.4",
     "lucide-react": "^0.304.0",

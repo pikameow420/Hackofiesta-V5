@@ -1,6 +1,8 @@
 import { useRef, useState } from "react";
 import "./accordian.css";
 import { gsap } from "gsap";
+import ArrowDropDownIcon from '@mui/icons-material/ArrowDropDown';
+import ArrowDropUpIcon from '@mui/icons-material/ArrowDropUp';
 import data from "./data.json"
 function Accordian() {
   const [openAccordion, setOpenAccordion] = useState(null);
@@ -12,7 +14,7 @@ function Accordian() {
         accordionRefs.current[index].querySelector(".accordion__details"),
         {
           height: 0,
-          duration: 1,
+          duration: 0.3,
           ease: "power1.inOut",
           onComplete: () => setOpenAccordion(null),
         }
@@ -26,7 +28,7 @@ function Accordian() {
           ),
           {
             height: 0,
-            duration: 1,
+            duration: 0.3,
             ease: "power1.inOut",
           }
         );
@@ -37,7 +39,7 @@ function Accordian() {
         { height: 0 },
         {
           height: "auto",
-          duration: 1,
+          duration: 0.3,
           ease: "power1.inOut",
         }
       );
@@ -46,7 +48,7 @@ function Accordian() {
   // TODO - MID
 
   return (
-    <div className="w-screen min-h-screen bg-[#111]">
+    <div className="w-screen my-32">
       <div className="text-7xl pt-6 pb-6 acc_style text-center text_style_gradient font-bold">
         FAQs
       </div>
@@ -57,7 +59,8 @@ function Accordian() {
                 return (
                 <div
                 key={ind}
-                className={`accordion__item md:w-4/5  w-[95%] mx-auto  ${
+                id="accordcomp"
+                className={`accordion__item md:w-4/5 my-2 py-2 w-[95%] mx-auto  ${
                     openAccordion === ind ? "open" : ""
                 }`}
                 ref={(el) => (accordionRefs.current[ind] = el)}
@@ -66,10 +69,13 @@ function Accordian() {
                     className={`${openAccordion === ind ? "open" : ""} accordion__header`}
                     onClick={() => handleAccordionClick(ind)}
                 >
-                    <p className="accordion__number">{ind+1}</p>
+                    {/* <p className="w-2 h-2 bg-white rounded-full"></p> */}
                     <p className="accordion__name flex">
                       {content.header}
                     </p>
+                    {/* <img src="/download.jpg" className="self-end"/> */}
+                    {openAccordion === ind ? <ArrowDropUpIcon className="self-end"/>  : <ArrowDropDownIcon  className="self-end"/>}
+                    
                 </div>
 
                 <div className="accordion__details sm:px-10 px-0">
