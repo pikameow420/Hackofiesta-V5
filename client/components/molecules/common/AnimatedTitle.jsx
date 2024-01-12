@@ -61,7 +61,7 @@ export default function AnimatedTitle() {
   };
   
   return (
-    <h2 className="md:text-9xl sm:text-7xl text-center text-5xl text_style_heading" aria-label={text} role="heading">
+    <h2 className="md:text-9xl sm:text-7xl  text-center text-5xl text_style_heading" aria-label={text} role="heading">
       {text.split(" ").map((word, index) => {
         return (
           <Word
@@ -79,7 +79,7 @@ export default function AnimatedTitle() {
           >
           
           <div className={`${myFont.className} text-center`}>
-            <h2 className="hero glitch layers text-center" data-text="Hackofiesta"><span>Hackofiesta</span></h2>
+            <h2 className="hero glitch layers text-center ml-4 sm:ml-0" data-text="Hackofiesta"><span>Hackofiesta</span></h2>
           </div>
            
           </Word>
