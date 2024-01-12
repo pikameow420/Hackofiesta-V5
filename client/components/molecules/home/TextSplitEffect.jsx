@@ -37,10 +37,10 @@ const TextSplitEffect = () => {
   useEffect(()=>{
     scrolleffectStart.current = 650;
 
-    if(window.innerWidth<640){
-      scrolleffectStart.current = 370
-      console.log("hello less height")
-    }
+    // if(window.innerWidth<640){
+    //   scrolleffectStart.current = 370
+    //   console.log("hello less height")
+    // }
 
   },[])
 
@@ -96,7 +96,7 @@ const TextSplitEffect = () => {
   }
   return (
     <>
-      <div className="w-screen mb-32 sm:my-64 flex justify-center items-start relative text-white">
+      <div className="w-screen my-64 flex justify-center items-start relative text-white">
         <motion.div ref={ref}>
           {displayIt && (
             <>
