@@ -65,11 +65,11 @@ const TextSplitEffect = () => {
       ) {
         ref1.current.style.transform = `translateY(${-Math.max(
           0,
-          2.2 * (document.body.scrollTop - scrolleffectStart.current - window.innerHeight + 720)
+          2 * (document.body.scrollTop - scrolleffectStart.current - window.innerHeight + 720)
         )}px)`;
         ref2.current.style.transform = `translateY(${Math.max(
           0,
-          3.2 * (document.body.scrollTop - scrolleffectStart.current - window.innerHeight + 720)
+          3.4 * (document.body.scrollTop - scrolleffectStart.current - window.innerHeight + 720)
         )}px)`;
       } else if (document.body.scrollTop - scrolleffectStart.current - window.innerHeight + 720 > 100) {
         ref3.current.style.transitionDuration = "1000ms";
@@ -81,9 +81,9 @@ const TextSplitEffect = () => {
       } else if (document.body.scrollTop - scrolleffectStart.current - window.innerHeight + 720 > 100) {
         ref1.current.style.transform = `translateY(${-Math.max(
           0,
-          2.2 * 100
+          2 * 100
         )}px)`;
-        ref2.current.style.transform = `translateY(${Math.max(0, 3.2 * 100)}px)`;
+        ref2.current.style.transform = `translateY(${Math.max(0, 3.4 * 100)}px)`;
       }
       if (
         document.body.scrollTop - scrolleffectStart.current - 49 - window.innerHeight + 720 > 0 &&
@@ -103,8 +103,8 @@ const TextSplitEffect = () => {
               <div
                 className={
                   val
-                    ? "opacity-100 duration-500 -translate-y-8"
-                    : "opacity-0 duration-500 translate-y-0"
+                    ? "opacity-100 duration-500 -translate-y-12"
+                    : "opacity-0 duration-500 -translate-y-4"
                 }
               >
                 <About />

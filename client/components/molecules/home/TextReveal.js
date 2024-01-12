@@ -48,7 +48,7 @@ const TextReveal = ({ customText, val }) => {
             }
         }
         setTimeout(() => {
-          for (let i = 1; i <= 11; i++) {
+          for (let i = 1; i <= 13; i++) {
             if (i !== 6) {
               if( document.getElementById(`span ${i}`))document.getElementById(`span ${i}`).style.opacity = 0;
             }
