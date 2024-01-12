@@ -12,6 +12,7 @@
     "@emotion/styled": "^11.11.0",
     "@lobehub/ui": "^1.125.8",
     "@mui/icons-material": "^5.15.4",
+    "@mui/material": "^5.15.4",
     "antd": "^5.12.8",
     "antd-style": "^3.6.1",
     "framer-motion": "^10.16.16",
