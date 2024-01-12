@@ -49,19 +49,19 @@ const TextReveal = ({ customText, val }) => {
         }
         setTimeout(() => {
           for (let i = 1; i <= 11; i++) {
-            if (i !== 5) {
+            if (i !== 6) {
               if( document.getElementById(`span ${i}`))document.getElementById(`span ${i}`).style.opacity = 0;
             }
           }
           setTimeout(() => {
             document.body.style.overflowY = "hidden"
-            document.getElementById("span 5").innerText = "";
-            document.getElementById("span 5").style.width = "100vw";
-            document.getElementById("span 5").style.height = "100vh";
+            document.getElementById("span 6").innerText = "";
+            document.getElementById("span 6").style.width = "100vw";
+            document.getElementById("span 6").style.height = "100vh";
             const CircleDiv = document.createElement("div");
             CircleDiv.id = "circleGrowing";
             CircleDiv.classList.add("opacity_transition");
-            document.getElementById("span 5").appendChild(CircleDiv);
+            document.getElementById("span 6").appendChild(CircleDiv);
             setTimeout(() => {
               CircleDiv.style.opacity = 1;
               setTimeout(() => {
@@ -84,7 +84,7 @@ const TextReveal = ({ customText, val }) => {
                 key={index}
                 id={"span " + (index + 1)}
                 style={{ "--index": index + 1 }}
-                className={myFont.className +"overflow-hidden"}
+                className={myFont.className +"overflow-hidden hero !text-8xl mb-5"}
               >
                 {char === " " ? <>&nbsp;</> : char}
               </span>
