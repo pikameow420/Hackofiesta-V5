@@ -20,7 +20,7 @@ const WebsiteLoadUp = () => {
       className="opacity-1 bg-transparent w-screen h-screen flex justify-center items-center relative transition duration-1000"
     >
            <video
-            className="w-full absolute h-full object-cover brightness-[60%] transition duration-500"
+            className="w-full absolute h-screen object-cover brightness-[60%] transition duration-500"
             autoPlay
             muted
             loop

@@ -428,3 +428,64 @@ body {
 .open .accordion__details {
   height: auto;
 }
+
+.hover-underline-animation {
+  display: inline-block;
+  position: relative;
+  border-radius: 100%;
+  
+}
+
+.hover-underline-animation:after {
+  content: '';
+  position: absolute;
+  width: 100%;
+  transform: scaleX(0);
+  height: 2px;
+  bottom: 0;
+  left: 0;
+  background-color: 
+  #FF00FF;
+  border-radius: 100%;
+  transform-origin: bottom right;
+  transition: transform 0.25s ease-out;
+}
+
+.hover-underline-animation:hover:after {
+  transform: scaleX(1);
+  border-radius: 100%;
+  transform-origin: bottom left;
+}
+
+
+#accordcomp {
+  --border-size: 1px;
+  --border-angle: 0turn;
+  background-image: conic-gradient(
+      from var(--border-angle),
+      #213,
+      #112 50%,
+      #213
+    ),
+    conic-gradient(from var(--border-angle), transparent 20%, #03D0FF, #FF00FF);
+  background-size: calc(100% - (var(--border-size) * 2))
+      calc(100% - (var(--border-size) * 2)),
+    cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+
+  animation: bg-spin 3s linear infinite;
+
+}
+
+@keyframes bg-spin {
+    to {
+      --border-angle: 1turn;
+    }
+  }
+
+@property --border-angle {
+  syntax: "<angle>";
+  inherits: true;
+  initial-value: 0turn;
+}

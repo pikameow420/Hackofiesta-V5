@@ -54,6 +54,7 @@ const TextReveal = ({ customText, val }) => {
             }
           }
           setTimeout(() => {
+            document.body.style.overflowY = "hidden"
             document.getElementById("span 5").innerText = "";
             document.getElementById("span 5").style.width = "100vw";
             document.getElementById("span 5").style.height = "100vh";
@@ -77,7 +78,7 @@ const TextReveal = ({ customText, val }) => {
     <motion.div ref={ref} animate={controls} {...animationOptions} className="m-0 overflow-hidden">
       <div className="reveal-text lg:text-6xl md:text-4xl sm:text-3xl text-3xl overflow-hidden">
         {displayIt && (
-          <>
+          <p className={`${myFont.className} mx-auto text-center`}>
             {text.split("").map((char, index) => (
               <span
                 key={index}
@@ -88,7 +89,7 @@ const TextReveal = ({ customText, val }) => {
                 {char === " " ? <>&nbsp;</> : char}
               </span>
             ))}
-          </>
+          </p>
         )}
       </div>
     </motion.div>
