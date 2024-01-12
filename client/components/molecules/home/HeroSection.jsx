@@ -51,7 +51,7 @@ const HeroSection = () => {
               transition={{ duration: 1.3 }}
             >
               <h3 className="text-yellow-600 text-2xl text-center w-full mt-[-30px]">
-                IIIT LUCKNOW's
+                IIIT LUCKNOW&apos;s
               </h3>
             </motion.div>
 
@@ -76,7 +76,7 @@ const HeroSection = () => {
               transition={{ duration: 1.8 }}
             >
               <h3 className="text-xl text-center w-full mt-[-10px]">
-                LUCKNOW'S BIGGEST HACKATHON
+                LUCKNOW&apos;S BIGGEST HACKATHON
               </h3>
             </motion.div>
           </div>
