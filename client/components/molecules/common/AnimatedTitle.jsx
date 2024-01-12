@@ -79,7 +79,7 @@ export default function AnimatedTitle() {
           >
           
           <div className={myFont.className}>
-          <h2 class="hero glitch layers" data-text="Hackofiesta"><span>Hackofiesta</span></h2>
+            <h2 className="hero glitch layers" data-text="Hackofiesta"><span>Hackofiesta</span></h2>
           </div>
            
           </Word>

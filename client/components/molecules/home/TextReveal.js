@@ -54,6 +54,7 @@ const TextReveal = ({ customText, val }) => {
             }
           }
           setTimeout(() => {
+            document.body.style.overflowY = "hidden"
             document.getElementById("span 5").innerText = "";
             document.getElementById("span 5").style.width = "100vw";
             document.getElementById("span 5").style.height = "100vh";

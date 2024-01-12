@@ -20,6 +20,10 @@ const Home = () => {
       setTimeout(() => {
         loadUp.style.opacity = 0;
         setTimeout(() => {
+          
+          document.body.style.overflowY = "scroll"
+        }, 1000);
+        setTimeout(() => {
           setVal(true);
           sessionStorage.setItem("viewed", "true");
         }, 700);
