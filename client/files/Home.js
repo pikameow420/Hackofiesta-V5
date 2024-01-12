@@ -9,6 +9,7 @@ import Stats from "@/components/molecules/home/Stats";
 import { MobileNavbar } from "@/components/molecules/mobile-navbar/MobileNavbar";
 import Accordian from "@/components/molecules/accordian/Accordian";
 import Footerr from "@/components/molecules/common/Footer";
+import { ChakraProvider } from "@chakra-ui/react";
 
 const Home = () => {
   const [val, setVal] = useState(false);
@@ -32,12 +33,14 @@ const Home = () => {
       {val && (
         <>
           <Navbar />
-            <HeroSection />
-          
+          <HeroSection />
+
           {/* <CustomScrollbar /> */}
           <TextSplitEffect />
           <Stats />
-          <Accordian />
+          <ChakraProvider>
+            <Accordian />
+          </ChakraProvider>
           <Footerr />
         </>
       )}

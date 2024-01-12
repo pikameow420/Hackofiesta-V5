@@ -6,7 +6,7 @@ const Stats = () => {
   console.log(Features)
   return (
     <ThemeProvider themeMode="dark">
-    <div className="w-screen h-screen flex justify-center items-start p-6">
+    <div className="w-screen min-h-full flex justify-center items-start p-6">
       <Features
         items={[
           {
