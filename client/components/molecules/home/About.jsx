@@ -58,20 +58,20 @@ const About = () => {
       className="flex flex-col"
     >
       <div
-        className="w-screen pl-12 pr-8 flex flex-col sm:flex-row items-center justify-between"
+        className="w-screen pl-12 pr-8 flex flex-col sm:flex-row items-center justify-around"
         style={{ height: "50vh" }}
       >
         <motion.div>
-          <h1 className="text-3xl mb-2 lg:mb-3 xl:-mb-1 text-center sm:text-5xl xl:text-7xl xl:mt-12 ">
+          <h1 className="text-3xl mb-2 lg:mb-3 xl:-mb-1 text-center sm:text-5xl xl:text-6xl xl:mt-8 ">
             HackoFiesta
           </h1>
-          <div className="text-center px-2 w-screen text-base xl:text-3xl lg:text-2xl xl:w-[500px] xl:p-6 md:text-2xl md:w-[350px] sm:text-xl sm:w-[250px] sm:ml-8 sm:p-0">
-            is the biggest offline hackathon in Uttar Pradesh, conducted by IIIT
+          <div className=" px-2 w-screen text-base xl:text-2xl lg:text-2xl xl:w-[500px] xl:p-6 md:text-2xl md:w-[350px] sm:text-xl sm:w-[250px] sm:ml-8 sm:p-0">
+            It is the biggest offline hackathon in Uttar Pradesh, conducted by IIIT
             Lucknow. Tune in to 36 hours of creativity, coding and collaboration
             leading to some of the most innovative hacks you have ever seen.
           </div>
           <div className="flex justify-center">
-            <button className="button-glitch mx-5 flex items-center my-3">
+            <button className="button-glitch mx-5 flex items-center my-2">
               Know More
             </button>
           </div>

@@ -36,12 +36,13 @@ const Home = () => {
       {val && (
         <>
           <Navbar />
-          <HeroSection />
+            <HeroSection />
+          
           {/* <CustomScrollbar /> */}
           <TextSplitEffect />
           <Stats />
-          <Accordian/>
-          <Footerr/>
+          <Accordian />
+          <Footerr />
         </>
       )}
     </>

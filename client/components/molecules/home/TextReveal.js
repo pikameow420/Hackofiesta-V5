@@ -75,8 +75,8 @@ const TextReveal = ({ customText, val }) => {
   }, []);
 
   return (
-    <motion.div ref={ref} animate={controls} {...animationOptions} className="m-0">
-      <div className="reveal-text lg:text-6xl md:text-4xl sm:text-3xl text-3xl">
+    <motion.div ref={ref} animate={controls} {...animationOptions} className="m-0 overflow-hidden">
+      <div className="reveal-text lg:text-6xl md:text-4xl sm:text-3xl text-3xl overflow-hidden">
         {displayIt && (
           <>
             {text.split("").map((char, index) => (
@@ -84,7 +84,7 @@ const TextReveal = ({ customText, val }) => {
                 key={index}
                 id={"span " + (index + 1)}
                 style={{ "--index": index + 1 }}
-                className={myFont.className}
+                className={myFont.className +"overflow-hidden"}
               >
                 {char === " " ? <>&nbsp;</> : char}
               </span>
