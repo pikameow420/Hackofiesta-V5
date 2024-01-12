@@ -68,26 +68,26 @@ const MouseTrail = () => {
 
   return (
     <>
-      <div className="circle fixed top-0 left-0 h-2 w-2 rounded-full bg-black pointer-events-none z-50"></div>
-      <div className="circle fixed top-0 left-0 h-2 w-2 rounded-full bg-black pointer-events-none z-50"></div>
-      <div className="circle fixed top-0 left-0 h-2 w-2 rounded-full bg-black pointer-events-none z-50"></div>
-      <div className="circle fixed top-0 left-0 h-2 w-2 rounded-full bg-black pointer-events-none z-50"></div>
-      <div className="circle fixed top-0 left-0 h-2 w-2 rounded-full bg-black pointer-events-none z-50"></div>
-      <div className="circle fixed top-0 left-0 h-2 w-2 rounded-full bg-black pointer-events-none z-50"></div>
-      <div className="circle fixed top-0 left-0 h-2 w-2 rounded-full bg-black pointer-events-none z-50"></div>
-      <div className="circle fixed top-0 left-0 h-2 w-2 rounded-full bg-black pointer-events-none z-50"></div>
-      <div className="circle fixed top-0 left-0 h-2 w-2 rounded-full bg-black pointer-events-none z-50"></div>
-      <div className="circle fixed top-0 left-0 h-2 w-2 rounded-full bg-black pointer-events-none z-50"></div>
-      <div className="circle fixed top-0 left-0 h-2 w-2 rounded-full bg-black pointer-events-none z-50"></div>
-      <div className="circle fixed top-0 left-0 h-2 w-2 rounded-full bg-black pointer-events-none z-50"></div>
-      <div className="circle fixed top-0 left-0 h-2 w-2 rounded-full bg-black pointer-events-none z-50"></div>
-      <div className="circle fixed top-0 left-0 h-2 w-2 rounded-full bg-black pointer-events-none z-50"></div>
-      <div className="circle fixed top-0 left-0 h-2 w-2 rounded-full bg-black pointer-events-none z-50"></div>
-      <div className="circle fixed top-0 left-0 h-2 w-2 rounded-full bg-black pointer-events-none z-50"></div>
-      <div className="circle fixed top-0 left-0 h-2 w-2 rounded-full bg-black pointer-events-none z-50"></div>
-      <div className="circle fixed top-0 left-0 h-2 w-2 rounded-full bg-black pointer-events-none z-50"></div>
-      <div className="circle fixed top-0 left-0 h-2 w-2 rounded-full bg-black pointer-events-none z-50"></div>
-      <div className="circle fixed top-0 left-0 h-2 w-2 rounded-full bg-black pointer-events-none z-50"></div>
+      <div className="circle hidden lg:block fixed top-0 left-0 h-2 w-2 rounded-full bg-black pointer-events-none z-50"></div>
+      <div className="circle hidden lg:block fixed top-0 left-0 h-2 w-2 rounded-full bg-black pointer-events-none z-50"></div>
+      <div className="circle hidden lg:block fixed top-0 left-0 h-2 w-2 rounded-full bg-black pointer-events-none z-50"></div>
+      <div className="circle hidden lg:block fixed top-0 left-0 h-2 w-2 rounded-full bg-black pointer-events-none z-50"></div>
+      <div className="circle hidden lg:block fixed top-0 left-0 h-2 w-2 rounded-full bg-black pointer-events-none z-50"></div>
+      <div className="circle hidden lg:block fixed top-0 left-0 h-2 w-2 rounded-full bg-black pointer-events-none z-50"></div>
+      <div className="circle hidden lg:block fixed top-0 left-0 h-2 w-2 rounded-full bg-black pointer-events-none z-50"></div>
+      <div className="circle hidden lg:block fixed top-0 left-0 h-2 w-2 rounded-full bg-black pointer-events-none z-50"></div>
+      <div className="circle hidden lg:block fixed top-0 left-0 h-2 w-2 rounded-full bg-black pointer-events-none z-50"></div>
+      <div className="circle hidden lg:block fixed top-0 left-0 h-2 w-2 rounded-full bg-black pointer-events-none z-50"></div>
+      <div className="circle hidden lg:block fixed top-0 left-0 h-2 w-2 rounded-full bg-black pointer-events-none z-50"></div>
+      <div className="circle hidden lg:block fixed top-0 left-0 h-2 w-2 rounded-full bg-black pointer-events-none z-50"></div>
+      <div className="circle hidden lg:block fixed top-0 left-0 h-2 w-2 rounded-full bg-black pointer-events-none z-50"></div>
+      <div className="circle hidden lg:block fixed top-0 left-0 h-2 w-2 rounded-full bg-black pointer-events-none z-50"></div>
+      <div className="circle hidden lg:block fixed top-0 left-0 h-2 w-2 rounded-full bg-black pointer-events-none z-50"></div>
+      <div className="circle hidden lg:block fixed top-0 left-0 h-2 w-2 rounded-full bg-black pointer-events-none z-50"></div>
+      <div className="circle hidden lg:block fixed top-0 left-0 h-2 w-2 rounded-full bg-black pointer-events-none z-50"></div>
+      <div className="circle hidden lg:block fixed top-0 left-0 h-2 w-2 rounded-full bg-black pointer-events-none z-50"></div>
+      <div className="circle hidden lg:block fixed top-0 left-0 h-2 w-2 rounded-full bg-black pointer-events-none z-50"></div>
+      <div className="circle hidden lg:block fixed top-0 left-0 h-2 w-2 rounded-full bg-black pointer-events-none z-50"></div>
     </>
   );
 };
