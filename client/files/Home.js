@@ -36,7 +36,7 @@ const Home = () => {
       {val && (
         <>
           <Navbar />
-            <HeroSection />
+          <HeroSection />
           
           {/* <CustomScrollbar /> */}
           <TextSplitEffect />

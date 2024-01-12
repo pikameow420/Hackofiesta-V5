@@ -457,3 +457,8 @@ body {
   inherits: true;
   initial-value: 0turn;
 }
+
+
+.nav-shadow {
+  box-shadow: 0 0 10px -4px ;
+}

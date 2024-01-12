@@ -3,8 +3,27 @@ import TextReveal from "./TextReveal";
 import { motion, useAnimation } from "framer-motion";
 import { useInView } from "react-intersection-observer";
 import { useRouter } from "next/navigation";
+import {
+  GradientButton,
+  GradientButtonProps,
+  StoryBook,
+  useControls,
+  useCreateStore,
+} from '@lobehub/ui';
 
 const About = () => {
+  const store = useCreateStore();
+  const control = useControls(
+    {
+      children: 'Get a Demo',
+      glow: true,
+      size: {
+        options: ['large', 'normal', 'small'],
+        value: 'large',
+      },
+    },
+    { store },
+  );
   const scrollDiv = useRef(null);
   const [onlyOnce, setOnlyOnce] = useState(true);
   const router = useRouter();
@@ -58,11 +77,11 @@ const About = () => {
       className="flex flex-col"
     >
       <div
-        className="w-screen pl-12 pr-8 flex flex-col sm:flex-row items-center justify-around"
+        className="w-screen pl-12 pr-8 ms-16 flex flex-col sm:flex-row items-center justify-around"
         style={{ height: "50vh" }}
       >
         <motion.div>
-          <h1 className="text-3xl mb-2 lg:mb-3 xl:-mb-1 text-center sm:text-5xl xl:text-6xl xl:mt-8 ">
+          <h1 className="text-3xl mb-2 lg:mb-3 xl:-mb-1 text-center sm:text-5xl xl:text-6xl xl:mt-8  ">
             HackoFiesta
           </h1>
           <div className=" px-2 w-screen text-base xl:text-2xl lg:text-2xl xl:w-[500px] xl:p-6 md:text-2xl md:w-[350px] sm:text-xl sm:w-[250px] sm:ml-8 sm:p-0">
