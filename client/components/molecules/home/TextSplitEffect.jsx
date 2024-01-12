@@ -33,39 +33,52 @@ const TextSplitEffect = () => {
       //   controls.start("visible");
     }
   }, [controls, inView]);
+
+  useEffect(()=>{
+    scrolleffectStart.current = 650;
+
+    if(window.innerWidth<640){
+      scrolleffectStart.current = 370
+      console.log("hello less height")
+    }
+
+  },[])
+
   useEffect(() => {
     if (displayIt) {
       setTimeout(() => {
         document.body.addEventListener("scroll", handleScroll);
-        scrolleffectStart.current = document.body.scrollTop;
         console.log("scrolleffectStart.current", scrolleffectStart.current);
       }, 10);
     } else {
       document.body.removeEventListener("scroll", handleScroll);
     }
   }, [displayIt]);
+
+
+
   function handleScroll() {
     if (ref3.current && ref1.current && ref2.current) {
       if (
-        document.body.scrollTop - 500 - window.innerHeight + 720 <= 100 &&
-        document.body.scrollTop - 500 - window.innerHeight + 720 > 0
+        document.body.scrollTop - scrolleffectStart.current - window.innerHeight + 720 <= 100 &&
+        document.body.scrollTop - scrolleffectStart.current - window.innerHeight + 720 > 0
       ) {
         ref1.current.style.transform = `translateY(${-Math.max(
           0,
-          2.2 * (document.body.scrollTop - 500 - window.innerHeight + 720)
+          2.2 * (document.body.scrollTop - scrolleffectStart.current - window.innerHeight + 720)
         )}px)`;
         ref2.current.style.transform = `translateY(${Math.max(
           0,
-          3.2 * (document.body.scrollTop - 500 - window.innerHeight + 720)
+          3.2 * (document.body.scrollTop - scrolleffectStart.current - window.innerHeight + 720)
         )}px)`;
-      } else if (document.body.scrollTop - 500 - window.innerHeight + 720 > 100) {
+      } else if (document.body.scrollTop - scrolleffectStart.current - window.innerHeight + 720 > 100) {
         ref3.current.style.transitionDuration = "1000ms";
         ref3.current.style.opacity = 0;
-      } else if (document.body.scrollTop - 500 - window.innerHeight + 720 <= 0) {
+      } else if (document.body.scrollTop - scrolleffectStart.current - window.innerHeight + 720 <= 0) {
         // document.getElementById("hello").style.height = "18vw";
         ref1.current.style.transform = `translateY(${-Math.max(0, 0)}px)`;
         ref2.current.style.transform = `translateY(${Math.max(0, 0)}px)`;
-      } else if (document.body.scrollTop - 500 - window.innerHeight + 720 > 100) {
+      } else if (document.body.scrollTop - scrolleffectStart.current - window.innerHeight + 720 > 100) {
         ref1.current.style.transform = `translateY(${-Math.max(
           0,
           2.2 * 100
@@ -73,7 +86,7 @@ const TextSplitEffect = () => {
         ref2.current.style.transform = `translateY(${Math.max(0, 3.2 * 100)}px)`;
       }
       if (
-        document.body.scrollTop - 549 - window.innerHeight + 720 > 0 &&
+        document.body.scrollTop - scrolleffectStart.current - 49 - window.innerHeight + 720 > 0 &&
         ref1.current.style.transform !== "transform translateY(0px)"
       ) { 
         setVal(true);
@@ -83,15 +96,15 @@ const TextSplitEffect = () => {
   }
   return (
     <>
-      <div className="w-screen my-64 flex justify-center items-start relative text-white">
+      <div className="w-screen mb-32 sm:my-64 flex justify-center items-start relative text-white">
         <motion.div ref={ref}>
           {displayIt && (
             <>
               <div
                 className={
                   val
-                    ? "opacity-100 duration-500 translate-y-0"
-                    : "opacity-0 duration-500 translate-y-12"
+                    ? "opacity-100 duration-500 -translate-y-8"
+                    : "opacity-0 duration-500 translate-y-0"
                 }
               >
                 <About />
