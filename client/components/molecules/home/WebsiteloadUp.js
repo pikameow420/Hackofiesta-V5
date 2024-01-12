@@ -27,7 +27,7 @@ const WebsiteLoadUp = () => {
             src="/Teaser.mp4"
           ></video>
       <div ref={presentRef} id="presenting" className={caveat.className}>
-        <TextReveal customText="HackoFiesta" val={true} />
+        <TextReveal customText="Hack-o-Fiesta" val={true} />
       </div>
     </div>
   );
