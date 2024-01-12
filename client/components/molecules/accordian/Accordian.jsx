@@ -61,7 +61,7 @@ function Accordian() {
                 <div
                 key={ind}
                 id="accordcomp"
-                className={`accordion__item md:w-4/5 my-2 py-2 w-[95%] mx-auto  ${
+                className={`accordion__item md:w-4/5 -mt-5 py-2 w-[95%] mx-auto  ${
                     openAccordion === ind ? "open" : ""
                 }`}
                 ref={(el) => (accordionRefs.current[ind] = el)}
