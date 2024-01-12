@@ -3,12 +3,11 @@ import WebsiteLoadUp from "@/components/molecules/home/WebsiteloadUp";
 import Navbar from "@/components/molecules/common/Navbar";
 import HeroSection from "@/components/molecules/home/HeroSection";
 import React, { useEffect, useState } from "react";
-import CustomScrollbar from "@/components/atoms/CustomScrollbar";
 import TextSplitEffect from "@/components/molecules/home/TextSplitEffect";
 import Stats from "@/components/molecules/home/Stats";
-import { MobileNavbar } from "@/components/molecules/mobile-navbar/MobileNavbar";
 import Accordian from "@/components/molecules/accordian/Accordian";
 import Footerr from "@/components/molecules/common/Footer";
+import Sponsors from "@/components/molecules/sponsors/Sponsors";
 
 const Home = () => {
   const [val, setVal] = useState(false);
@@ -41,7 +40,8 @@ const Home = () => {
           {/* <CustomScrollbar /> */}
           <TextSplitEffect />
           <Stats />
-            <Accordian />
+          <Sponsors/>
+          <Accordian />
           <Footerr />
         </>
       )}
