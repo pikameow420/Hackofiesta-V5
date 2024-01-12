@@ -25,7 +25,14 @@ const HeroSection = () => {
   ];
   return (
     <ThemeProvider themeMode="dark">
-      <div className="h-screen flex flex-col justify-center sm:justify-start">
+      <div className="h-screen relative flex flex-col justify-center sm:justify-start"> 
+        <div className="hidden md:block w-2.5 translate-x-1 h-2.5 bg-white rounded-full absolute right-80"></div>
+        <div className="hidden md:block w-2.5 translate-x-1 h-2.5 bg-white rounded-full absolute right-36"></div>
+        <div className="hidden md:block absolute w-[1px] h-10 right-80 bg-white"></div>
+        <div className="hidden md:block absolute w-[1px] h-10 right-36 bg-white"></div>
+        <div className="hidden md:flex absolute right-20 top-5 justify-center items-center my-5">
+          <Timer/>
+        </div>
         <div className="-mt-5">
           <motion.div
             initial={{ opacity: 0, x: "0px", y: "50px" }}
@@ -48,7 +55,7 @@ const HeroSection = () => {
             exit={{ opacity: 1, x: "0px", y: "0px" }}
             transition={{ duration: 1.3 }}
           >
-            <h3 className="text-yellow-600 text-2xl text-center w-full mt-[-30px]">
+            <h3 className="text-yellow-600 text-2xl text-center w-full mt-[-30px] font-bold">
               IIIT LUCKNOW&apos;s
             </h3>
           </motion.div>
@@ -70,9 +77,10 @@ const HeroSection = () => {
             exit={{ opacity: 1, x: "0px", y: "0px" }}
             transition={{ duration: 1.8 }}
           >
-            <h3 className="text-xl text-center w-full mt-[-10px]">
+            <h3 className="text-xl text-center w-full mt-[-10px] font-bold">
               LUCKNOW&apos;S BIGGEST HACKATHON
             </h3>
+            
           </motion.div>
         </div>
 
