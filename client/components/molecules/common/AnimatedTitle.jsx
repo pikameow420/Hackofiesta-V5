@@ -4,7 +4,7 @@ import { useAnimation, motion } from "framer-motion";
 import { useInView } from "react-intersection-observer";
 import '../../../css/textanimation.css'
 import localFont from 'next/font/local'
-const myFont = localFont({ src: '../../../public/Mokoto.ttf' })
+export const myFont = localFont({ src: '../../../public/Mokoto.ttf' })
 const Title = styled.h2`
   font-size: 3rem;
   font-weight: 600;
