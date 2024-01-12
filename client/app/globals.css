@@ -503,3 +503,31 @@ body{
 .card_inside_shadow{
   box-shadow: -15px 0 30px rgba(246, 247, 247, 0.8); 
 }
+
+.ant-drawer {
+  margin-top: 20px;
+}
+
+.ant-drawer-mask{
+  background-color: transparent !important;
+  backdrop-filter: blur(10px) !important;
+}
+
+.ant-menu-title-content{
+  color: white !important;
+  font-size: 20px;
+  padding: 0 20px;
+  border-radius: 10px;
+  
+}
+.ant-menu-title-content:hover{
+  background-color: rgba(0, 0, 0, 0.362);
+
+}
+
+
+
+.ant-menu-inline{
+  padding-top: 20px;
+  
+}
