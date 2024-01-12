@@ -19,8 +19,7 @@ const Home = () => {
       setTimeout(() => {
         loadUp.style.opacity = 0;
         setTimeout(() => {
-          
-          document.body.style.overflowY = "scroll"
+          document.body.style.overflowY = "scroll";
         }, 1000);
         setTimeout(() => {
           setVal(true);
@@ -40,7 +39,7 @@ const Home = () => {
           {/* <CustomScrollbar /> */}
           <TextSplitEffect />
           <Stats />
-          <Sponsors/>
+          <Sponsors />
           <Accordian />
           <Footerr />
         </>
