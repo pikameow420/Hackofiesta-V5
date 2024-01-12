@@ -1,12 +1,12 @@
 import React from 'react'
 import styled from 'styled-components';
 import Tilt from "react-parallax-tilt"
-
+import { myFont } from '../common/AnimatedTitle';
 const Heading = () =>{
     return (
         <div className="flex flex-col justify-center items-center">
-        <div className="sm:text-7xl text-5xl text-center">
-            Sponsors
+        <div className={`md:text-8xl ${myFont.className} sm:text-6xl text-5xl text-center`}>
+            SPONSORS
         </div>
         <div className="text-base font-thin sm:mt-16 mt-11 mx-7 text-center text-white max-w-[600px]">
             Hackathon sponsors provide mission-critical support for the next generation of Web3 developers. If you or your organization is interested in sponsorship opportunities, please email us at hackathon@chainlinklabs.com 
@@ -35,7 +35,7 @@ const Card = ({companyName}) =>{
 }
 const Sponsors = () => {
   return (
-        <div className="min-h-screen py-16 bg-[#111111] mt-24">
+        <div className="min-h-screen bg-[#111111] pt-16 pb-32 mt-24">
             <Heading/>
             <div className="grid grid-cols-1 gap-8 md:grid-cols-2 px-10 justify-center mt-12 lg:mx-40 xl:mx-64">
                 <Card   companyName={"Polygon"}/>

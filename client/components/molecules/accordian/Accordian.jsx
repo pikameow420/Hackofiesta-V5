@@ -4,6 +4,7 @@ import { gsap } from "gsap";
 import ArrowDropDownIcon from '@mui/icons-material/ArrowDropDown';
 import ArrowDropUpIcon from '@mui/icons-material/ArrowDropUp';
 import data from "./data.json"
+import { myFont } from "../common/AnimatedTitle";
 function Accordian() {
   const [openAccordion, setOpenAccordion] = useState(null);
   const accordionRefs = useRef([]);
@@ -49,7 +50,7 @@ function Accordian() {
 
   return (
     <div className="w-screen my-32">
-      <div className="text-7xl pt-6 pb-6 acc_style text-center text_style_gradient font-bold">
+      <div className={`md:text-8xl ${myFont.className} sm:text-6xl text-5xl pt-6 pb-6 acc_style text-center `}>
         FAQs
       </div>
       <div className="w-screen flex sm:flex-row flex-col sm:justify-between ">
