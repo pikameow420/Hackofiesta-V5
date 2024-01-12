@@ -1,7 +1,6 @@
 import React, { useEffect, useRef } from "react";
 import AnimatedTitle from "../common/AnimatedTitle";
 import Timer from "@/components/atoms/Timer";
-import { MobileNavbar } from "../mobile-navbar/MobileNavbar";
 import { Hero, HeroProps } from "@lobehub/ui";
 import { ThemeProvider } from "@lobehub/ui";
 import localFont from "next/font/local";
@@ -25,7 +24,7 @@ const HeroSection = () => {
   ];
   return (
     <ThemeProvider themeMode="dark">
-      <div className="h-screen flex flex-col justify-center sm:justify-start">
+      <div className="h-screen  flex flex-col sm:pt-0 pt-[200px] sm:justify-start">
         <div className="-mt-5">
           <motion.div
             initial={{ opacity: 0, x: "0px", y: "50px" }}
@@ -75,12 +74,19 @@ const HeroSection = () => {
             </h3>
           </motion.div>
         </div>
+        <div className="sm:hidden text-center text-gray-500 px-7 pt-6">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate, neque ea ratione fugit accusamus fuga perspiciatis
+        </div>
+        <div className="flex sm:hidden justify-center items-center mt-12 mb-10 mx-10">
+          <Timer/>
+        </div>
 
         <motion.div
           initial={{ opacity: 0, x: "0px", y: "50px" }}
           animate={{ opacity: 1, x: "0", y: "0px" }}
           exit={{ opacity: 1, x: "0px", y: "0px" }}
           transition={{ duration: 1.8 }}
+          className="sm:mt-0 sm:mb-0 mt-auto mb-6"
         >
           <Hero
             actions={actions}

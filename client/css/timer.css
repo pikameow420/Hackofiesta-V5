@@ -21,23 +21,24 @@
     justify-content: center;
     align-items: center;
     background: linear-gradient(270deg, #051817, #0e3839);
-    
+    width: 100%;
     animation-name: colorChange;
     animation-duration: 8s;
     animation-iteration-count: infinite;
     text-shadow: 1px 1px 7px;
     border-radius: 15px;
     border: 2px solid silver;
-    box-shadow: 0 0 5px 10px;
+    box-shadow: 0 0 2px 2px;
 }
 .clock section p {
     font-size: 2rem;
 }
  @media screen and (max-width: 600px) {
     .clock{
-        box-shadow: 0 0 5px 10px;
+        box-shadow: 0 0 2px 2px;
         height: 5rem;
     }
+    
         .clock section p {
             font-size: 1.3rem;
         }
@@ -47,8 +48,9 @@
     display: flex;
     flex-direction: column;
     justify-content: center;
-    align-items: center;
+    align-items: center;    
     padding: 0 1rem;
+    /* width:100%; */
 }
 
 
