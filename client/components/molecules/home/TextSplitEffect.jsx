@@ -36,46 +36,46 @@ const TextSplitEffect = () => {
   useEffect(() => {
     if (displayIt) {
       setTimeout(() => {
-        window.addEventListener("scroll", handleScroll);
-        scrolleffectStart.current = window.scrollY;
+        document.body.addEventListener("scroll", handleScroll);
+        scrolleffectStart.current = document.body.scrollTop;
         console.log("scrolleffectStart.current", scrolleffectStart.current);
       }, 10);
     } else {
-      window.removeEventListener("scroll", handleScroll);
+      document.body.removeEventListener("scroll", handleScroll);
     }
   }, [displayIt]);
   function handleScroll() {
     if (ref3.current && ref1.current && ref2.current) {
       if (
-        window.scrollY - 576 - window.innerHeight + 720 <= 85 &&
-        window.scrollY - 576 - window.innerHeight + 720 > 0
+        document.body.scrollTop - 500 - window.innerHeight + 720 <= 100 &&
+        document.body.scrollTop - 500 - window.innerHeight + 720 > 0
       ) {
         ref1.current.style.transform = `translateY(${-Math.max(
           0,
-          2.2 * (window.scrollY - 576 - window.innerHeight + 720)
+          2.2 * (document.body.scrollTop - 500 - window.innerHeight + 720)
         )}px)`;
         ref2.current.style.transform = `translateY(${Math.max(
           0,
-          3.5 * (window.scrollY - 576 - window.innerHeight + 720)
+          3.2 * (document.body.scrollTop - 500 - window.innerHeight + 720)
         )}px)`;
-      } else if (window.scrollY - 576 - window.innerHeight + 720 > 85) {
+      } else if (document.body.scrollTop - 500 - window.innerHeight + 720 > 100) {
         ref3.current.style.transitionDuration = "1000ms";
         ref3.current.style.opacity = 0;
-      } else if (window.scrollY - 576 - window.innerHeight + 720 <= 0) {
+      } else if (document.body.scrollTop - 500 - window.innerHeight + 720 <= 0) {
         // document.getElementById("hello").style.height = "18vw";
         ref1.current.style.transform = `translateY(${-Math.max(0, 0)}px)`;
         ref2.current.style.transform = `translateY(${Math.max(0, 0)}px)`;
-      } else if (window.scrollY - 576 - window.innerHeight + 720 > 85) {
+      } else if (document.body.scrollTop - 500 - window.innerHeight + 720 > 100) {
         ref1.current.style.transform = `translateY(${-Math.max(
           0,
-          2.2 * 85
+          2.2 * 100
         )}px)`;
-        ref2.current.style.transform = `translateY(${Math.max(0, 3.5 * 85)}px)`;
+        ref2.current.style.transform = `translateY(${Math.max(0, 3.2 * 100)}px)`;
       }
       if (
-        window.scrollY - 625 - window.innerHeight + 720 > 0 &&
+        document.body.scrollTop - 549 - window.innerHeight + 720 > 0 &&
         ref1.current.style.transform !== "transform translateY(0px)"
-      ) {
+      ) { 
         setVal(true);
       }
       //   else setVal(false);
@@ -83,7 +83,7 @@ const TextSplitEffect = () => {
   }
   return (
     <>
-      <div className="w-screen -z-50 h-screen flex justify-center items-start relative text-white">
+      <div className="w-screen h-screen flex justify-center items-start relative text-white">
         <motion.div ref={ref}>
           {displayIt && (
             <>
@@ -99,7 +99,7 @@ const TextSplitEffect = () => {
               <div
                 ref={ref3}
                 style={{
-                  height: "14vw",
+                  height: "10vw",
                   top: "20%",
                   left: "50%",
                   transform: "translate(-50%, -50%)",
@@ -109,7 +109,7 @@ const TextSplitEffect = () => {
               >
                 <div
                   style={{
-                    height: "8vw",
+                    height: "6vw",
                   }}
                   ref={ref1}
                   className="mb-0 overflow-hidden"
@@ -119,14 +119,14 @@ const TextSplitEffect = () => {
                   </div>
                 </div>
                 <div
-                  style={{ height: "6vw" }}
+                  style={{ height: "4vw" }}
                   ref={ref2}
                   className=" overflow-hidden"
                 >
                   <div
                     style={{
                       fontSize: "10vw",
-                      transform: "translateY(-8vw)",
+                      transform: "translateY(-6vw)",
                     }}
                     className="h-full"
                   >
