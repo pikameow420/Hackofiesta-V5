@@ -1,48 +1,48 @@
 [
   {
-    "header": "What can be the team size",
-    "details": ["A team can consist of 1 to 5 members."]
+    "header": "👥 Team Size",
+    "details": ["Teams can range from 1 to 5 members."]
   },
   {
-    "header": "Are there any registration charges?",
-    "details": ["Nope! None at all."]
+    "header": "💵 Registration Charges",
+    "details": ["Nope! It's absolutely free."]
   },
   {
-    "header": "Who can attend?",
+    "header": "🌍 Who Can Attend?",
     "details": [
-      "Anyone with a passion for learning and innovation, or primarily, undergraduate and high school programmers are welcome to attend. Even if you can’t code, you can learn along the way, and also, we can help you out in the hackathon. Students from all around the world are welcome to participate."
+      "Open to all with a passion for learning and innovation. Undergraduates, high school programmers, and coding beginners are welcome worldwide. We're here to help you, even if you're new to coding!"
     ]
   },
   {
-    "header": "Is there a provision of a partial selection of members of the team?",
+    "header": "🔄 Team Selection",
     "details": [
-      "No, there is no such provision. The selection of a team is done considering all its members. However, the team members can apply as individuals and then form a team after selection."
+      "Teams are selected as a whole, but individual applications are welcome. You can form a team after being selected."
     ]
   },
   {
-    "header": "What if I don't know how to code?",
+    "header": "❓ Don't Know How to Code?",
     "details": [
-      " That is not a problem! A great way to learn how to code is by attending a hackathon. You never know what new skill you might pick up! You can also ask specific questions to our mentors and in the Discord server, where people are there to help. Plus we have planned numerous workshops and talks for you guys to make the learning process better."
+      "No problem! Hackofiesta is a great place to learn. Ask our mentors, join our Discord for help, and explore workshops to enhance your coding skills."
     ]
   },
   {
-    "header": "What can I build?",
-    "details": ["Possibly something that resonates with the theme of the event. It can be a website, software, an applet, or maybe even a piece of hardware. We’d love to see anything that solves a social problem or goes with our agenda."]
+    "header": "🛠️ What Can I Build?",
+    "details": ["Build something aligning with the event theme - a website, software, applet, or even hardware. Anything solving a social problem or fitting our agenda is welcome!"]
   },
   {
-    "header": "Can I start working on my hack before the event?",
-    "details": ["No. In the interest of fairness, students should not be working on their projects before Hackofiesta begins, and we do not allow participants to work on pre-existing projects. However, you can familiarize yourself with all the tools and technologies you intend to use beforehand."]
+    "header": "⏳ Start Before the Event?",
+    "details": ["Nope. Fairness first! Work on projects only during Hackofiesta. Familiarize yourself with tools beforehand, but no pre-existing projects allowed."]
   },
   {
-    "header": "What are the challenges to be solved by the Projects?",
-    "details": ["Read more about this in the Themes Section."]
+    "header": "🚀 Project Challenges",
+    "details": ["Explore the Themes Section for project challenges."]
   },
   {
-    "header": "What if I don't want to present my hack?",
-    "details": ["Unfinished or unimpressive (so you think) projects should be presented anyway! Presenting your hack gives you a chance to be proud of what you’ve done, and a constructive perspective of where you should be headed next."]
+    "header": "🙅‍♂️ Don't Want to Present?",
+    "details": ["Even unfinished projects should be presented! It's a chance to be proud and gain constructive feedback."]
   },
   {
-    "header": "Are there any sponsored challenges and API prizes?",
-    "details": ["There will be prizes from multiple sponsors to build a hack on top of their APIs or platform. Keep an eye out on the website and social media handles, where we'll be adding more ideas to hack on closer to the event."]
+    "header": "💡 Sponsored Challenges",
+    "details": ["Exciting prizes from sponsors for hacks on their APIs/platforms. Keep an eye on the website and social media for more ideas closer to the event."]
   }
 ]
