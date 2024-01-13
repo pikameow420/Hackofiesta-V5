@@ -35,14 +35,14 @@ export const metadata = {
         width: 1200,
         height: 650,
         alt: "Hackofiesta Landing Page",
-        type: "image/jpeg",
+        type: "image/png",
       },
       {
         url: "/og1.png",
         width: 800,
         height: 800,
         alt: "Hackofiesta Landing Page",
-        type: "image/jpeg",
+        type: "image/png",
       },
       {
         url: "/og2.png",
