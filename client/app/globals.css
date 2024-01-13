@@ -564,6 +564,19 @@ body{
   animation: wave var(--speed) var(--easing) alternate infinite;
   border-radius: 30% 70% 70% 30%/30% 30% 70% 70%;
 }
+.gradient1 {
+  --size: 250px;
+  --speed: 8s;
+  --easing: cubic-bezier(0.8, 0.2, 0.2, 0.8);
+  width: 20%;
+  height: 70%;
+  filter: blur(calc(var(--size) / 5));
+  background-image: linear-gradient(red, rgb(245, 118, 118));
+  /* background-color: red; */
+  /* animation: rotate var(--speed) var(--easing) alternate infinite; */
+  animation: wave var(--speed) var(--easing) alternate infinite;
+  border-radius: 30% 70% 70% 30%/30% 30% 70% 70%;
+}
 
 @media (min-width: 720px) {
   .gradient {

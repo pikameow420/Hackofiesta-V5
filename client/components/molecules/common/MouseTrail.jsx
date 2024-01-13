@@ -38,8 +38,8 @@ const MouseTrail = () => {
     });
 
     window.addEventListener("mousemove", function (e) {
-      coords.x = e.clientX + 10;
-      coords.y = e.clientY + 14;
+      coords.x = e.clientX + 8;
+      coords.y = e.clientY + 12;
     });
 
     function animateCircles() {

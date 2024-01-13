@@ -36,7 +36,7 @@ const TextSplitEffect = () => {
   }, [controls, inView]);
 
   useEffect(() => {
-    scrolleffectStart.current = 650;
+    scrolleffectStart.current = 610;
 
     // if(window.innerWidth<640){
     //   scrolleffectStart.current = 370
@@ -61,7 +61,7 @@ const TextSplitEffect = () => {
   function handleScroll() {
     if (ref3.current && ref1.current && ref2.current) {
       if (
-        document.body.scrollTop - scrolleffectStart.current - window.innerHeight + 720 <= 100 &&
+        document.body.scrollTop - scrolleffectStart.current - window.innerHeight + 720 <= 120 &&
         document.body.scrollTop - scrolleffectStart.current - window.innerHeight + 720 > 0
       ) {
         ref1.current.style.transform = `translateY(${-Math.max(
@@ -72,19 +72,19 @@ const TextSplitEffect = () => {
           0,
           3.4 * (document.body.scrollTop - scrolleffectStart.current - window.innerHeight + 720)
         )}px)`;
-      } else if (document.body.scrollTop - scrolleffectStart.current - window.innerHeight + 720 > 100) {
+      } else if (document.body.scrollTop - scrolleffectStart.current - window.innerHeight + 720 > 120) {
         ref3.current.style.transitionDuration = "1000ms";
         ref3.current.style.opacity = 0;
       } else if (document.body.scrollTop - scrolleffectStart.current - window.innerHeight + 720 <= 0) {
         // document.getElementById("hello").style.height = "18vw";
         ref1.current.style.transform = `translateY(${-Math.max(0, 0)}px)`;
         ref2.current.style.transform = `translateY(${Math.max(0, 0)}px)`;
-      } else if (document.body.scrollTop - scrolleffectStart.current - window.innerHeight + 720 > 100) {
+      } else if (document.body.scrollTop - scrolleffectStart.current - window.innerHeight + 720 > 120) {
         ref1.current.style.transform = `translateY(${-Math.max(
           0,
-          2 * 100
+          2 * 120
         )}px)`;
-        ref2.current.style.transform = `translateY(${Math.max(0, 3.4 * 100)}px)`;
+        ref2.current.style.transform = `translateY(${Math.max(0, 3.4 * 120)}px)`;
       }
       if (
         document.body.scrollTop - scrolleffectStart.current - 49 - window.innerHeight + 720 > 0 &&

@@ -23,26 +23,30 @@ const HeroSection = () => {
   ];
   return (
     <ThemeProvider themeMode="dark">
-      <div className="h-screen relative  flex flex-col sm:pt-0 pt-[30px] sm:justify-start"> 
+      <div className="h-screen relative bg-black flex flex-col sm:pt-0 pt-[30px] sm:justify-start">
         <div className="hidden lg:block w-2.5 translate-x-1 h-2.5 bg-white rounded-full absolute right-96"></div>
         <div className="hidden lg:block w-2.5 translate-x-1 h-2.5 bg-white rounded-full absolute right-36"></div>
         <div className="hidden lg:block absolute w-[1px] h-10 right-96 bg-white"></div>
         <div className="hidden lg:block absolute w-[1px] h-10 right-36 bg-white"></div>
         <div className="hidden lg:flex absolute right-20 top-5 justify-center items-center my-5">
-          <Timer/>
+          <Timer />
         </div>
         <div className="-mt-5">
-            <motion.div
-                initial={{ opacity: 0, x: "0px", y: "50px" }}
-                animate={{ opacity: 1, x: "0", y: "0px" }}
-                exit={{ opacity: 1, x: "0px", y: "0px" }}
-                transition={{ duration: 1.3 }}
-              >
-             <h3 className={`sm:hidden ${myFont.className} sm:mb-0  text-xl text-center tracking-[0.3em] leading-7 w-full mb-[4px] font-bold`} style={{wordSpacing:"10px"}}>
+          <motion.div
+            initial={{ opacity: 0, x: "0px", y: "50px" }}
+            animate={{ opacity: 1, x: "0", y: "0px" }}
+            exit={{ opacity: 1, x: "0px", y: "0px" }}
+            transition={{ duration: 1.3 }}
+          >
+            <h3
+              className={`sm:hidden ${myFont.className} sm:mb-0  text-xl text-center tracking-[0.3em] leading-7 w-full mb-[4px] font-bold`}
+              style={{ wordSpacing: "10px" }}
+            >
               <span className="text-base tracking-[0.2]">LUCKNOW&apos;S </span>
-              <br />BIGGEST HACKATHON
+              <br />
+              BIGGEST HACKATHON
             </h3>
-            </motion.div>
+          </motion.div>
 
           <motion.div
             initial={{ opacity: 0, x: "0px", y: "50px" }}
@@ -65,14 +69,16 @@ const HeroSection = () => {
               className="mx-auto block mb-[27px] sm:hidden"
             />
           </motion.div>
-          
+
           <motion.div
             initial={{ opacity: 0, x: "0px", y: "50px" }}
             animate={{ opacity: 1, x: "0", y: "0px" }}
             exit={{ opacity: 1, x: "0px", y: "0px" }}
             transition={{ duration: 1.3 }}
           >
-            <h3 className={`text-yellow-600 ${myFont.className} tracking-wider text-xl text-center w-full mt-[-30px] font-bold`}>
+            <h3
+              className={`text-yellow-600 ${myFont.className} tracking-wider text-xl text-center w-full mt-[-30px] font-bold`}
+            >
               IIIT LUCKNOW&apos;s
             </h3>
           </motion.div>
@@ -97,11 +103,10 @@ const HeroSection = () => {
             <h3 className="sm:block hidden text-xl text-center w-full mt-[-10px] font-bold">
               LUCKNOW&apos;S BIGGEST HACKATHON
             </h3>
-            
           </motion.div>
         </div>
         <div className="flex lg:hidden  justify-center w-full items-center mt-12">
-          <Timer/>
+          <Timer />
         </div>
 
         <motion.div
