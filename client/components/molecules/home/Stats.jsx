@@ -2,6 +2,7 @@ import React from "react";
 import { Features, FeaturesProps, ThemeProvider } from "@lobehub/ui";
 import { MoonStar, Palette, Zap } from "lucide-react";
 import { myFont } from "../common/AnimatedTitle";
+import BgGradient from "@/components/atoms/gradientBackground";
 
 const Stats = () => {
   console.log(Features)
