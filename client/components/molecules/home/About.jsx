@@ -103,7 +103,7 @@ const About = () => {
                 actions={[{
                   icon: "Discord",
                   link: "https://github.com/lobehub",
-                  text: "Discord",
+                  text: "Know More",
                   type: "primary",
                 }]}
               // description="Lobe UI is an open-source UI component library for <br/>building chatbot web apps"

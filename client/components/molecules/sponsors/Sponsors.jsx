@@ -36,7 +36,7 @@ const Card = ({companyName}) =>{
 }
 const Sponsors = () => {
   return (
-        <div className="min-h-screen z-0 relative pt-16 pb-32 mt-24">
+        <div className="min-h-screen z-0 relative pt-16 pb-48 mt-24">
             <BgGradient/>
             <Heading/>
             <div className="grid grid-cols-1 gap-8 md:grid-cols-2 px-10 justify-center mt-12 lg:mx-40 xl:mx-64">

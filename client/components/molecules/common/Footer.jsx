@@ -116,7 +116,7 @@ const Footerr = () => {
             </div>
         </section>
         <section className="mt-12">
-          <div className="text-center text-base font-bold tracking-wide text-slate-500">Copyright © 2022</div>
+          <div className="text-center text-base font-bold tracking-wide text-slate-500">Equinox © 2024</div>
         </section>
       </footer>
     </>
