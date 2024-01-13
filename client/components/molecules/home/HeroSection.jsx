@@ -109,7 +109,7 @@ const HeroSection = () => {
           animate={{ opacity: 1, x: "0", y: "0px" }}
           exit={{ opacity: 1, x: "0px", y: "0px" }}
           transition={{ duration: 1.8 }}
-          className="sm:mt-0 sm:mb-0 mt-auto mb-16"
+          className="sm:mt-0 sm:mb-0 mt-6"
         >
           <Hero
             actions={actions}
