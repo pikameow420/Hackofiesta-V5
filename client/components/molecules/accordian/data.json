@@ -1,11 +1,11 @@
 [
   {
     "header": "What can be the team size",
-    "details": ["A team can consist of 1 to 5 members"]
+    "details": ["A team can consist of 1 to 5 members."]
   },
   {
     "header": "Are there any registration charges?",
-    "details": ["Nope! None at all"]
+    "details": ["Nope! None at all."]
   },
   {
     "header": "Who can attend?",
@@ -24,5 +24,25 @@
     "details": [
       " That is not a problem! A great way to learn how to code is by attending a hackathon. You never know what new skill you might pick up! You can also ask specific questions to our mentors and in the Discord server, where people are there to help. Plus we have planned numerous workshops and talks for you guys to make the learning process better."
     ]
+  },
+  {
+    "header": "What can I build?",
+    "details": ["Possibly something that resonates with the theme of the event. It can be a website, software, an applet, or maybe even a piece of hardware. We’d love to see anything that solves a social problem or goes with our agenda."]
+  },
+  {
+    "header": "Can I start working on my hack before the event?",
+    "details": ["No. In the interest of fairness, students should not be working on their projects before Hackofiesta begins, and we do not allow participants to work on pre-existing projects. However, you can familiarize yourself with all the tools and technologies you intend to use beforehand."]
+  },
+  {
+    "header": "What are the challenges to be solved by the Projects?",
+    "details": ["Read more about this in the Themes Section."]
+  },
+  {
+    "header": "What if I don't want to present my hack?",
+    "details": ["Unfinished or unimpressive (so you think) projects should be presented anyway! Presenting your hack gives you a chance to be proud of what you’ve done, and a constructive perspective of where you should be headed next."]
+  },
+  {
+    "header": "Are there any sponsored challenges and API prizes?",
+    "details": ["There will be prizes from multiple sponsors to build a hack on top of their APIs or platform. Keep an eye out on the website and social media handles, where we'll be adding more ideas to hack on closer to the event."]
   }
 ]

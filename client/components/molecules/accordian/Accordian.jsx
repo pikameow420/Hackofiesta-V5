@@ -83,7 +83,7 @@ function Accordian() {
                     <ul>
                     {content.details.map((con,ind)=>{
                       return (
-                        <li key={ind}>
+                        <li key={ind} style={{listStyle:"none"}}>
                           {con}
                         </li>
                       )
