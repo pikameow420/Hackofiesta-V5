@@ -5,7 +5,7 @@ import { myFont } from "../common/AnimatedTitle";
 import BgGradient from "@/components/atoms/gradientBackground";
 const Heading = () => {
   return (
-    <div className="flex flex-col justify-center z-50 items-center">
+    <div id="sponsors" className="flex flex-col justify-center z-50 items-center">
       <div
         className={`md:text-8xl z-50 ${myFont.className} sm:text-6xl text-5xl text-center`}
       >

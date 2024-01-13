@@ -122,6 +122,7 @@ const HeroSection = () => {
             // title="Lobe <b>UI</b>"
           />
         </motion.div>
+        <div id="about"></div>
       </div>
     </ThemeProvider>
   );
