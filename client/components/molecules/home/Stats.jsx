@@ -16,43 +16,37 @@ const Stats = () => {
       <Features
         items={[
           {
-            description:
-              "Provides a simple way to customize default themes, you can change the colors, fonts, breakpoints and everything you need.",
+            description:"Coming Soon",
             icon: Palette,
-            title: "Themeable",
+            title: "BLOCKCHAIN",
           },
           {
-            description:
-              "voids unnecessary styles props at runtime, making it more performant than other UI libraries.",
+            description:"Coming Soon",
             icon: Zap,
-            title: "Fast",
+            title: "GAME DEVELOPMENT",
           },
           {
-            description:
-              "Automatic dark mode recognition, NextUI automatically changes the theme when detects HTML theme prop changes.",
+            description:"Coming Soon",
             icon: MoonStar,
-            title: "Light & Dark UI"
+            title: "AI & ML"
           },
           {
-            description:
-              "Provides a simple way to customize default themes, you can change the colors, fonts, breakpoints and everything you need.",
+            description:"Coming Soon",
             icon: Palette,
-            title: "Themeable",
+            title: "CLOUD COMPUTING",
           },
           {
-            description:
-              "voids unnecessary styles props at runtime, making it more performant than other UI libraries.",
+            description:"Coming Soon",
             icon: Zap,
-            title: "Fast",
+            title: "EDUCATION",
           },
           {
-            description:
-              "Automatic dark mode recognition, NextUI automatically changes the theme when detects HTML theme prop changes.",
+            description:"Coming Soon",
             icon: MoonStar,
-            title: "Light & Dark UI"
+            title: "INNOVATION"
           },
         ]}
-        // itemStyle={{ backgroundColor: "black" ,color:"white" }}
+        // itemStyle={{ width:"500px",height:"500px" }}
       />
     </div>
     </ThemeProvider>

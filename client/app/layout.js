@@ -31,6 +31,13 @@ export const metadata = {
       "Tune in to 36 hours of creativity, coding and collaboration leading to some of the most innovative hacks you have ever seen. Hackofiesta is the biggest offline hackathon in Uttar Pradesh, conducted by IIIT Lucknow.",
     images: [
       {
+        url: "/og0.png",
+        width: 1200,
+        height: 650,
+        alt: "Hackofiesta Landing Page",
+        type: "image/jpeg",
+      },
+      {
         url: "/og1.png",
         width: 800,
         height: 800,

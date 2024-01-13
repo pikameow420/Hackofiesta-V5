@@ -16,7 +16,6 @@ const HeroSection = () => {
       type: "primary",
     },
     {
-      link: "/components/action-icon",
       text: "Register",
       type: "primary",
     },
