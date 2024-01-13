@@ -1,56 +1,28 @@
 [
-    {
-      "header": "The World's Tallest Building",
-      "details": [
-        "The current tallest building in the world is the Burj Khalifa, located in Dubai, United Arab Emirates.",
-        "It stands at a height of 828 meters (2,716 feet) tall and has 163 floors.",
-        "The building took six years to construct and was completed in 2010."
-      ]
-    },
-    {
-      "header": "Famous Inventors and Their Inventions",
-      "details": [
-        "Nikola Tesla, a Serbian-American inventor, is credited with the invention of the AC (alternating current) electrical system.",
-        "Thomas Edison, an American inventor, is credited with the invention of the light bulb.",
-        "Alexander Graham Bell, a Scottish-born American inventor, is credited with the invention of the telephone."
-      ]
-    }
-    ,
-    {
-      "header": "Largest Deserts in the World",
-      "details": [
-        "The Sahara Desert, located in Africa, is the largest hot desert in the world and covers an area of 9.2 million square kilometers (3.6 million square miles).",
-        "The Antarctic Desert, located in Antarctica, is the largest cold desert in the world and covers an area of 14 million square kilometers (5.4 million square miles).",
-        "The Arabian Desert, located in the Middle East, is the third-largest desert in the world and covers an area of 2.33 million square kilometers (900,000 square miles)."
-      ]
-    }
-    ,
-    {
-      "header": "Largest Deserts in the World",
-      "details": [
-        "The Sahara Desert, located in Africa, is the largest hot desert in the world and covers an area of 9.2 million square kilometers (3.6 million square miles).",
-        "The Antarctic Desert, located in Antarctica, is the largest cold desert in the world and covers an area of 14 million square kilometers (5.4 million square miles).",
-        "The Arabian Desert, located in the Middle East, is the third-largest desert in the world and covers an area of 2.33 million square kilometers (900,000 square miles)."
-      ]
-    }
-    ,
-    {
-      "header": "Largest Deserts in the World",
-      "details": [
-        "The Sahara Desert, located in Africa, is the largest hot desert in the world and covers an area of 9.2 million square kilometers (3.6 million square miles).",
-        "The Antarctic Desert, located in Antarctica, is the largest cold desert in the world and covers an area of 14 million square kilometers (5.4 million square miles).",
-        "The Arabian Desert, located in the Middle East, is the third-largest desert in the world and covers an area of 2.33 million square kilometers (900,000 square miles)."
-      ]
-    }
-    ,
-    {
-      "header": "Largest Deserts in the World",
-      "details": [
-        "The Sahara Desert, located in Africa, is the largest hot desert in the world and covers an area of 9.2 million square kilometers (3.6 million square miles).",
-        "The Antarctic Desert, located in Antarctica, is the largest cold desert in the world and covers an area of 14 million square kilometers (5.4 million square miles).",
-        "The Arabian Desert, located in the Middle East, is the third-largest desert in the world and covers an area of 2.33 million square kilometers (900,000 square miles)."
-      ]
-    }
-    
-  ]
-  
+  {
+    "header": "What can be the team size",
+    "details": ["A team can consist of 1 to 5 members"]
+  },
+  {
+    "header": "Are there any registration charges?",
+    "details": ["Nope! None at all"]
+  },
+  {
+    "header": "Who can attend?",
+    "details": [
+      "Anyone with a passion for learning and innovation, or primarily, undergraduate and high school programmers are welcome to attend. Even if you can’t code, you can learn along the way, and also, we can help you out in the hackathon. Students from all around the world are welcome to participate."
+    ]
+  },
+  {
+    "header": "Is there a provision of a partial selection of members of the team?",
+    "details": [
+      "No, there is no such provision. The selection of a team is done considering all its members. However, the team members can apply as individuals and then form a team after selection."
+    ]
+  },
+  {
+    "header": "What if I don't know how to code?",
+    "details": [
+      " That is not a problem! A great way to learn how to code is by attending a hackathon. You never know what new skill you might pick up! You can also ask specific questions to our mentors and in the Discord server, where people are there to help. Plus we have planned numerous workshops and talks for you guys to make the learning process better."
+    ]
+  }
+]
