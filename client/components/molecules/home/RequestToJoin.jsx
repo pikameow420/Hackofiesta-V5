@@ -30,7 +30,7 @@ const RequestToJoin = () => {
         {data.map((item, index) => {
           if (index % 2 == 0) {
             return (
-              <div className="w-full flex items-center justify-start px-auto px-8 my-16">
+              <div key={index} className="w-full flex items-center justify-start px-auto px-8 my-16">
                 <div className="lg:w-2/3 md:w-4/5 md:h-36 h-max w-full flex">
                   <span className=" md:w-6 w-3 bg-white"></span>
                   <div className="w-36 h-full"> </div>
@@ -48,7 +48,7 @@ const RequestToJoin = () => {
           }
           else{
             return(
-                <div className="w-full flex items-center justify-end px-auto px-8 my-20">
+                <div key={index} className="w-full flex items-center justify-end px-auto px-8 my-20">
                 <div className="lg:w-2/3 md:h-36 h-max w-full flex">
                   <span className=" md:w-6 w-3 bg-white"></span>
                   <div className="w-36 h-full"> </div>
