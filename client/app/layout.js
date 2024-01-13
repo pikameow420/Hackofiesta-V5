@@ -69,14 +69,14 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en">
       <body className={inter.className}>
-        <Script src="https://www.googletagmanager.com/gtag/js?id=KCPPJMEM4B" />
+        <Script src="https://www.googletagmanager.com/gtag/js?id=G-KCPPJMEM4B" />
         <Script id="google-analytics">
           {`
           window.dataLayer = window.dataLayer || [];
           function gtag(){dataLayer.push(arguments);}
           gtag('js', new Date());
  
-          gtag('config', 'KCPPJMEM4B');
+          gtag('config', 'G-KCPPJMEM4B');
         `}
         </Script>
         <MouseTrail />
