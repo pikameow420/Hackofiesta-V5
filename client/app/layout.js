@@ -32,8 +32,8 @@ export const metadata = {
     images: [
       {
         url: "/og1.png",
-        width: 1920,
-        height: 911,
+        width: 800,
+        height: 800,
         alt: "Hackofiesta Landing Page",
         type: "image/jpeg",
       },
