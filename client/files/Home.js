@@ -8,6 +8,7 @@ import Stats from "@/components/molecules/home/Stats";
 import Accordian from "@/components/molecules/accordian/Accordian";
 import Footerr from "@/components/molecules/common/Footer";
 import Sponsors from "@/components/molecules/sponsors/Sponsors";
+import RequestToJoin from "@/components/molecules/home/RequestToJoin";
 
 const Home = () => {
   const [val, setVal] = useState(false);
@@ -39,6 +40,7 @@ const Home = () => {
 
           {/* <CustomScrollbar /> */}
           <TextSplitEffect />
+          <RequestToJoin/>
           <Stats />
           <Sponsors />
           <Accordian />

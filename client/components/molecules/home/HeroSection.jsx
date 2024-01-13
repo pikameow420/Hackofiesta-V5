@@ -38,7 +38,7 @@ const HeroSection = () => {
                 exit={{ opacity: 1, x: "0px", y: "0px" }}
                 transition={{ duration: 1.3 }}
               >
-             <h3 className={`sm:hidden ${myFont.className}  text-xl text-center tracking-[0.3em] leading-7 w-full mb-[4px] font-bold`} style={{wordSpacing:"10px"}}>
+             <h3 className={`sm:hidden ${myFont.className} sm:mb-0  text-xl text-center tracking-[0.3em] leading-7 w-full mb-[4px] font-bold`} style={{wordSpacing:"10px"}}>
               <span className="text-base tracking-[0.2]">LUCKNOW&apos;S </span>
               <br />BIGGEST HACKATHON
             </h3>
@@ -83,7 +83,7 @@ const HeroSection = () => {
             exit={{ opacity: 1, x: "0px", y: "0px" }}
             transition={{ duration: 1.6 }}
           >
-            <div className="flex justify-center main_heading text-white text-9xl sm:my-5 -my-1 md:-mt-5">
+            <div className="flex justify-center main_heading text-white text-9xl sm:my-5 -mb-1 md:-mt-5">
               <AnimatedTitle />
             </div>
           </motion.div>
