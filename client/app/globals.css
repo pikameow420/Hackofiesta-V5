@@ -598,3 +598,17 @@ body{
 .outer_div_z{
   z-index: 500;
 }
+.css-jpln7h-MuiTabs-scroller {
+  position: static !important; /* or any other value you want */
+}
+
+.css-heg063-MuiTabs-flexContainer{
+display: flex !important;
+flex-wrap: wrap !important;
+}
+
+@media (max-width: 700px) {
+  .css-heg063-MuiTabs-flexContainer {
+    justify-content: center !important;
+  }
+}
