@@ -5,56 +5,57 @@ import { myFont } from "../common/AnimatedTitle";
 import BgGradient from "@/components/atoms/gradientBackground";
 
 const Stats = () => {
-  console.log(Features)
+  console.log(Features);
   return (
     <ThemeProvider themeMode="dark">
-      
-    <div className={`md:text-8xl ${myFont.className} sm:text-6xl text-5xl text-center`}>
-            Stats
-        </div>
-    <div className="w-screen flex justify-center items-start p-6 pb-40">
-      <Features
-        items={[
-          {
-            description:
-              "Provides a simple way to customize default themes, you can change the colors, fonts, breakpoints and everything you need.",
-            icon: Palette,
-            title: "Themeable",
-          },
-          {
-            description:
-              "voids unnecessary styles props at runtime, making it more performant than other UI libraries.",
-            icon: Zap,
-            title: "Fast",
-          },
-          {
-            description:
-              "Automatic dark mode recognition, NextUI automatically changes the theme when detects HTML theme prop changes.",
-            icon: MoonStar,
-            title: "Light & Dark UI"
-          },
-          {
-            description:
-              "Provides a simple way to customize default themes, you can change the colors, fonts, breakpoints and everything you need.",
-            icon: Palette,
-            title: "Themeable",
-          },
-          {
-            description:
-              "voids unnecessary styles props at runtime, making it more performant than other UI libraries.",
-            icon: Zap,
-            title: "Fast",
-          },
-          {
-            description:
-              "Automatic dark mode recognition, NextUI automatically changes the theme when detects HTML theme prop changes.",
-            icon: MoonStar,
-            title: "Light & Dark UI"
-          },
-        ]}
-        // itemStyle={{ backgroundColor: "black" ,color:"white" }}
-      />
-    </div>
+      <div
+        className={`md:text-8xl ${myFont.className} sm:text-6xl text-5xl text-center`}
+      >
+        TRACKS
+      </div>
+      <div className="w-screen flex justify-center items-start p-6 pb-40">
+        <Features
+          items={[
+            {
+              description:
+                "Build decentralized apps and smart contracts using blockchain technology.",
+              icon: Palette,
+              title: "BLOCKCHAIN",
+            },
+            {
+              description:
+                " Create captivating games with innovative features and immersive experiences",
+              icon: Zap,
+              title: "GAME DEVELOPMENT",
+            },
+            {
+              description:
+                "Develop intelligent solutions using AI and ML technologies.",
+              icon: MoonStar,
+              title: "AI & ML",
+            },
+            {
+              description:
+                "Build scalable applications leveraging cloud services and modern computing paradigms.",
+              icon: Palette,
+              title: "CLOUD COMPUTING",
+            },
+            {
+              description:
+                "Innovate in education technology to improve learning experiences and collaboration.",
+              icon: Zap,
+              title: "EDUCATION",
+            },
+            {
+              description:
+                " Think creatively and push boundaries to develop solutions with significant impact",
+              icon: MoonStar,
+              title: "INNOVATION",
+            },
+          ]}
+          // itemStyle={{ width:"500px",height:"500px" }}
+        />
+      </div>
     </ThemeProvider>
   );
 };

@@ -3,20 +3,20 @@ import styled from "styled-components";
 import Tilt from "react-parallax-tilt";
 import { myFont } from "../common/AnimatedTitle";
 import BgGradient from "@/components/atoms/gradientBackground";
+import { Info1, Info2 } from "./data";
+
 const Heading = () => {
   return (
     <div id="sponsors" className="flex flex-col justify-center z-50 items-center">
       <div
         className={`md:text-8xl z-50 ${myFont.className} sm:text-6xl text-5xl text-center`}
       >
-       SPONSORS
+      Past  SPONSORS
       </div>
-      <div className="text-base z-50 font-thin sm:mt-16 mt-11 mx-7 text-center text-white max-w-[600px]">
-        Hackathon sponsors provide mission-critical support for the next
-        generation of Web3 developers. If you or your organization is interested
-        in sponsorship opportunities, please email us at
-        hackathon@chainlinklabs.com
+      <div className="text-2xl z-50 mb-10 font-thin sm:mt-3 mt-2 mx-7 text-center text-white max-w-[600px]">
+        Our generous sponsors making Hackofiesta 5.0 possible.
       </div>
+
     </div>
   );
 };
@@ -33,33 +33,69 @@ const StyledDiv = styled.div`
   );
   background-color: rgba(19, 40, 80, 0.6);
 `;
-const Card = ({ companyName }) => {
+const Card = ({ companyName,description,url }) => {
   return (
     <Tilt tiltMaxAngleX={13} tiltMaxAngleY={13}>
       <StyledDiv className="pb-5 z-50 new_accordcomp mx-2 pt-16 px-10 min-h-[300px] shadow-md ">
-        <div className="text-4xl flex tracking-widest">{companyName}</div>
+        <div className="text-4xl flex min-h-12 tracking-widest">
+         <img src={url} className={"w-48"} />
+        </div>
         <div className="mt-8 text-base text-gray-500">
-          Avalanche is the fastest, most reliable smart contracts platform in
-          the world. Its revolutionary consensus protocol and novel Subnets
-          enable Web3 developers to easily launch highly-scalable solutions.
-          Deploy on the EVM, or use your own custom VM. Build anything you want,
-          any way you want, on the eco-friendly blockchain designed for Web3
-          devs.
+         {description}
         </div>
       </StyledDiv>
     </Tilt>
   );
 };
+
+const StyledDiv2 = styled.div`
+border-radius: 0px 25px 0px 25px;  
+background-color: rgba(19, 40, 80, 0.6);
+`
+const PlatinumCard = ({companyName,url,name}) =>{
+    return (
+      <StyledDiv2 className="min-h-[150px] flex px-10 gap-6 justify-center items-center w-full max-w-[250px] bg-orange-500">
+         <img src={url} className={`${name?("w-1/3"):"w-full"}`} />
+         {name && (
+         <div className="text-4xl text-black font-bold w-1/3">
+            {companyName}
+         </div>
+         )}
+      </StyledDiv2>
+    )
+}
+const GoldCard = () =>{
+    return (
+      <StyledDiv2 className="min-h-[130px] flex  justify-center gap-6 items-center w-full px-5 max-w-[210px]">
+          <div className="w-1/4">
+             <img src={"/github_logo.png"} className=" w-full" />
+          </div>
+          <div className={`font-serif text-white text-center text-3xl`}>
+              Github
+          </div>
+          
+      </StyledDiv2>
+    )
+}
+
 const Sponsors = () => {
   return (
-    <div className="min-h-screen z-0 relative pt-16 pb-48 mt-24">
+    <div className="min-h-screen z-0 relative pt-16 pb-28 mt-24">
       <BgGradient />
       <Heading />
+      <div className="sm:text-5xl text-3xl  text-center text-white sm:mt-10">💎 Diamond Sponsers</div>
       <div className="grid grid-cols-1 gap-8 md:grid-cols-2 px-10 justify-center mt-12 lg:mx-40 xl:mx-64">
-        <Card companyName={"Polygon"} />
-        <Card companyName={"Avalanche"} />
-        <Card companyName={"Polygon"} />
-        <Card companyName={"Avalanche"} />
+        {Info1.map((obj ,idx)=>{
+          return <Card key={idx} companyName={obj.companyName} url={obj.url} description={obj.description}/>
+        })}
+      </div>
+      <div className="sm:text-5xl text-3xl text-center text-white sm:mt-28 mt-12">💍 Platinum Sponsers</div>
+      <div className="flex flex-wrap gap-16  px-10 py-10 justify-center mt-4 sm:mx-10">
+          {Info2.map((ele,idx)=><PlatinumCard key={idx} companyName={ele.companyName} url={ele.url} name={ele.name}/>)}
+      </div>
+      <div className="sm:text-5xl text-3xl text-center text-white sm:mt-16 mt-7">🪙 Gold Sponser</div>
+      <div className="flex flex-wrap gap-16  px-10 py-10 justify-center mt-4 sm:mx-10">
+             <GoldCard />
       </div>
     </div>
   );

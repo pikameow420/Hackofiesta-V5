@@ -1,6 +1,4 @@
 import HamBurger from "@/components/atoms/MobileHamburger";
-import Image from "next/image";
-import Link from "next/link";
 import React, { useEffect, useRef } from "react";
 import { MobileNavbar } from "../mobile-navbar/MobileNavbar";
 import { useRouter } from "next/navigation";
