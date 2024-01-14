@@ -4,6 +4,7 @@ import { MoonStar, Palette, Zap } from "lucide-react";
 import { myFont } from "../common/AnimatedTitle";
 import BgGradient from "@/components/atoms/gradientBackground";
 
+
 const Stats = () => {
   console.log(Features);
   return (
@@ -19,7 +20,7 @@ const Stats = () => {
             {
               description:
                 "Build decentralized apps and smart contracts using blockchain technology.",
-              icon: Palette,
+              icon: Zap,
               title: "BLOCKCHAIN",
             },
             {
