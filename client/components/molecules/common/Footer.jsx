@@ -58,7 +58,7 @@ const Footerr = () => {
               <Link
                 href="https://iiitl.ac.in/"
                 target="_blank"
-                className="hover:text-rose-500 transition-all duration-500  ml-1 text-gray-400"
+                className=" hover:text-cyan-400 transition-all duration-500  ml-1 text-gray-400"
               >
                 ✉️ Email
               </Link>
@@ -69,7 +69,7 @@ const Footerr = () => {
               <Link
                 href="https://twitter.com/hof_iiitl"
                 target="_blank"
-                className="hover:text-rose-500 transition-all duration-500 text-gray-400"
+                className=" hover:text-cyan-400 transition-all duration-500 text-gray-400"
               >
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
@@ -94,7 +94,7 @@ const Footerr = () => {
               <Link
                 href="https://www.facebook.com/hackofiesta/"
                 target="_blank"
-                className="hover:text-rose-500 transition-all flex items-center duration-500 text-gray-400"
+                className=" hover:text-cyan-400 transition-all flex items-center duration-500 text-gray-400"
               >
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
@@ -134,7 +134,7 @@ const Footerr = () => {
               <Link
                 href="https://www.linkedin.com/company/hackofiesta-iiitl/"
                 target="_blank"
-                className="hover:text-rose-500 transition-all duration-500 text-gray-400"
+                className=" hover:text-cyan-400 transition-all duration-500 text-gray-400"
               >
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
@@ -161,7 +161,7 @@ const Footerr = () => {
               <Link
                 href=" https://discord.gg/8VK8jMt63j"
                 target="_blank"
-                className="hover:text-rose-500 transition-all duration-500 text-gray-400"
+                className=" hover:text-cyan-400 transition-all duration-500 text-gray-400"
               >
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
@@ -238,7 +238,7 @@ const Footerr = () => {
               <Link
                 href="https://www.instagram.com/hackofiesta/"
                 target="_blank"
-                className="hover:text-rose-500 transition-all duration-500 text-gray-400"
+                className=" hover:text-cyan-400 transition-all duration-500 text-gray-400"
               >
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
