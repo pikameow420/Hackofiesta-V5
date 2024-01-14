@@ -6,7 +6,8 @@
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "lint": "next lint"
+    "lint": "next lint",
+    "postbuild": "next-sitemap"
   },
   "dependencies": {
     "@emotion/styled": "^11.11.0",
@@ -19,6 +20,7 @@
     "gsap": "^3.12.4",
     "lucide-react": "^0.304.0",
     "next": "14.0.4",
+    "next-sitemap": "^4.2.3",
     "react": "^18",
     "react-dom": "^18",
     "react-intersection-observer": "^9.5.3",

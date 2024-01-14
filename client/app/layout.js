@@ -53,8 +53,7 @@ export const metadata = {
     },
   },
   twitter: {
-    handle: "@hof_iiitl",
-    cardType: "summary_large_image",
+    card: "summary_large_image",
   },
 };
 
