@@ -102,7 +102,7 @@ const About = () => {
               <Hero
                 actions={[{
                   icon: "Discord",
-                  link: "https://github.com/lobehub",
+                  link: "https://discord.gg/8VK8jMt63j",
                   text: "Know More",
                   type: "primary",
                 }]}

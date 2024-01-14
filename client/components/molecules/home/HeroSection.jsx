@@ -11,16 +11,21 @@ const HeroSection = () => {
   const actions = [
     {
       icon: "Discord",
-      link: "https://github.com/lobehub",
+      link: "https://discord.gg/8VK8jMt63j",
       text: "Discord",
       type: "primary",
+ 
     },
     {
-      link: "/components/action-icon",
       text: "Register",
       type: "primary",
+
     },
   ];
+  // useEffect(()=>{
+  //   let btn=document.querySelectorAll(".ant-btn")[1];
+  //   btn.classList.add("tooltip")
+  // },[])
   return (
     <ThemeProvider themeMode="dark">
       <div id="hero" className="h-screen relative bg-black flex flex-col sm:pt-0 pt-[30px] sm:justify-start">

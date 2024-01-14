@@ -9,7 +9,7 @@ const Heading = () => {
       <div
         className={`md:text-8xl z-50 ${myFont.className} sm:text-6xl text-5xl text-center`}
       >
-        SPONSORS
+       SPONSORS
       </div>
       <div className="text-base z-50 font-thin sm:mt-16 mt-11 mx-7 text-center text-white max-w-[600px]">
         Hackathon sponsors provide mission-critical support for the next

@@ -24,7 +24,7 @@ const RequestToJoin = () => {
       <h1
         className={`md:text-8xl ${myFont.className} sm:text-6xl text-5xl text-center`}
       >
-        REASONS TO JOIN
+        PREVIOUS YEAR STATS
       </h1>
       <section>
         {data.map((item, index) => {
