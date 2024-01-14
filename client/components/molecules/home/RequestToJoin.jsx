@@ -31,7 +31,7 @@ const RequestToJoin = () => {
   return (
     <div className="w-screen sm:px-28">
       <h1
-        className={`md:text-8xl ${myFont.className} -mt-20 md:mt-0 sm:text-6xl text-5xl text-center`}
+        className={`md:text-8xl ${myFont.className} -mt-16 md:mt-0 sm:text-6xl text-5xl text-center`}
       >
         PREVIOUS YEAR STATS
       </h1>

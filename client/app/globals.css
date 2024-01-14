@@ -637,3 +637,20 @@ flex-wrap: wrap !important;
 .MuiBox-root{
   padding: 0 !important;
 }
+
+.Mui-selected{
+  border-radius: 10px !important;
+}
+
+.verticalTabs .MuiBox-root{
+  background: transparent !important;
+}
+
+.MuiTabs-vertical{
+  @apply ms-10 me-[10vw] xl:ms-24 
+
+}
+
+.pinkshadow:hover {
+  box-shadow: 0 0 10px 0px #f8bb05;
+}
