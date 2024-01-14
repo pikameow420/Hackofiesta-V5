@@ -85,13 +85,13 @@ const Sponsors = () => {
       <Heading />
       <div className="sm:text-5xl text-3xl  text-center text-white sm:mt-10">💎 Diamond Sponsers</div>
       <div className="grid grid-cols-1 gap-8 md:grid-cols-2 px-10 justify-center mt-12 lg:mx-40 xl:mx-64">
-        {Info1.map((obj)=>{
-          return <Card companyName={obj.companyName} url={obj.url} description={obj.description}/>
+        {Info1.map((obj ,idx)=>{
+          return <Card key={idx} companyName={obj.companyName} url={obj.url} description={obj.description}/>
         })}
       </div>
       <div className="sm:text-5xl text-3xl text-center text-white sm:mt-28 mt-12">💍 Platinum Sponsers</div>
       <div className="flex flex-wrap gap-16  px-10 py-10 justify-center mt-4 sm:mx-10">
-          {Info2.map((ele)=><PlatinumCard companyName={ele.companyName} url={ele.url} name={ele.name}/>)}
+          {Info2.map((ele,idx)=><PlatinumCard key={idx} companyName={ele.companyName} url={ele.url} name={ele.name}/>)}
       </div>
       <div className="sm:text-5xl text-3xl text-center text-white sm:mt-16 mt-7">🪙 Gold Sponser</div>
       <div className="flex flex-wrap gap-16  px-10 py-10 justify-center mt-4 sm:mx-10">
