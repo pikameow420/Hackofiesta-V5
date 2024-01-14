@@ -591,3 +591,10 @@ body{
 .btnDiv .acss-1f6t0zm{
   display: none;
 }
+
+.outer_div_gradient{
+  z-index: -500;
+}
+.outer_div_z{
+  z-index: 500;
+}

@@ -26,9 +26,10 @@ const data = [
     text: "With a track record of hosting four successful editions,this year we bring you HackoFiesta v5",
   },
 ];
+
 const RequestToJoin = () => {
   return (
-    <div className="w-screen ">
+    <div className="w-screen sm:px-28">
       <h1
         className={`md:text-8xl ${myFont.className} sm:text-6xl text-5xl text-center`}
       >
