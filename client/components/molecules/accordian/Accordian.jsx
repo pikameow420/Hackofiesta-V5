@@ -49,7 +49,7 @@ function Accordian() {
   // TODO - MID
 
   return (
-    <div id="faq" className="w-screen my-10 md:my-32">
+    <div id="faq" className="w-screen my-64 lg:my-32">
       <div className={`md:text-8xl ${myFont.className} sm:text-6xl text-5xl pt-6 pb-6 acc_style text-center `}>
         FAQs
       </div>
