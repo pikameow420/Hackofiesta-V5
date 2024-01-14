@@ -37,20 +37,6 @@ export const metadata = {
         alt: "Hackofiesta Landing Page",
         type: "image/png",
       },
-      {
-        url: "/og1.png",
-        width: 800,
-        height: 800,
-        alt: "Hackofiesta Landing Page",
-        type: "image/png",
-      },
-      {
-        url: "/og2.png",
-        width: 500,
-        height: 500,
-        alt: "Hackofiesta Logo",
-        type: "image/png",
-      },
     ],
     siteName: "Hackofiesta 5.0",
     robots: {
