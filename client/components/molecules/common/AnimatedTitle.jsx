@@ -2,9 +2,9 @@ import { useEffect } from "react";
 import styled from "styled-components";
 import { useAnimation, motion } from "framer-motion";
 import { useInView } from "react-intersection-observer";
-import '../../../css/textanimation.css'
-import localFont from 'next/font/local'
-export const myFont = localFont({ src: '../../../public/Mokoto.ttf' })
+import "../../../css/textanimation.css";
+import localFont from "next/font/local";
+export const myFont = localFont({ src: "../../../public/Mokoto.ttf" });
 const Title = styled.h2`
   font-size: 3rem;
   font-weight: 600;
@@ -22,15 +22,15 @@ const Character = styled(motion.span)`
 `;
 
 export default function AnimatedTitle() {
-  const text = 'Hackofiesta' // This would normally be passed into this component as a prop!
-  
+  const text = "Hackofiesta"; // This would normally be passed into this component as a prop!
+
   const ctrls = useAnimation();
-  
+
   const { ref, inView } = useInView({
     threshold: 0.5,
     triggerOnce: true,
   });
-  
+
   useEffect(() => {
     if (inView) {
       ctrls.start("visible");
@@ -39,12 +39,12 @@ export default function AnimatedTitle() {
       ctrls.start("hidden");
     }
   }, [ctrls, inView]);
-  
+
   const wordAnimation = {
     hidden: {},
     visible: {},
   };
-  
+
   const characterAnimation = {
     hidden: {
       opacity: 0,
@@ -59,9 +59,13 @@ export default function AnimatedTitle() {
       },
     },
   };
-  
+
   return (
-    <h2 className="md:text-9xl sm:text-7xl  text-center text-5xl text_style_heading" aria-label={text} role="heading">
+    <h1
+      className="md:text-9xl sm:text-7xl  text-center text-5xl text_style_heading"
+      aria-label={text}
+      role="heading"
+    >
       {text.split(" ").map((word, index) => {
         return (
           <Word
@@ -75,16 +79,18 @@ export default function AnimatedTitle() {
               delayChildren: index * 0.25,
               staggerChildren: 0.05,
             }}
-            
           >
-          
-          <div className={`${myFont.className} text-center`}>
-            <h2 className="hero glitch layers text-center ml-4 sm:ml-0" data-text="Hackofiesta"><span>Hackofiesta</span></h2>
-          </div>
-           
+            <div className={`${myFont.className} text-center`}>
+              <span
+                className="hero glitch layers text-center ml-4 sm:ml-0"
+                data-text="Hackofiesta"
+              >
+                <span>Hackofiesta</span>
+              </span>
+            </div>
           </Word>
         );
       })}
-    </h2>
+    </h1>
   );
 }
