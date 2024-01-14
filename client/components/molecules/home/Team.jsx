@@ -36,10 +36,22 @@ export default function BasicTabs() {
   const [value, setValue] = useState(0);
   const [fontSize,setFontSize] = useState("24px")
   const [TechTeam, _] = useState([
-    "Shivam Patil",
-    "Mohammed Asim",
-    "Monark Jain",
-    "Ankit Yadav",
+    {
+        name:"Shivam Patil",
+        image:""
+    },
+    {
+        name:"Mohammed Asim",
+        image:""
+    },
+    {
+        name:"Monark Jain",
+        image:""
+    },
+    {
+        name:"Ankit Yadav",
+        image:""
+    },
   ]);
   const handleChange = (event, newValue) => {
     event.preventDefault();
@@ -115,18 +127,18 @@ export default function BasicTabs() {
         </Box>
         <CustomTabPanel value={value} index={0}>
           <div className="flex w-screen justify-center sm:justify-around items-center flex-wrap">
-            {TechTeam.map((name) => {
+            {TechTeam.map((item,idx) => {
               return (
-                <div className=" flex justify-center items-center py-5">
+                <div key={idx} className=" flex justify-center items-center py-5">
                   <div className=" w-44 h-60 justify-center card flex flex-col items-center">
                     <div className="w-40 h-40 flex items-center justify-center bg-yellow-300 rounded-full bg_gradient">
                       <img
-                        //   src={link}
+                          src={item.image}
                         className="w-[9.5rem] h-[9.5rem] object-cover rounded-full img_bg"
                       ></img>
                     </div>
                     <div className="w-full flex justify-center text-xl text-white  font-semibold">
-                      {name}
+                      {item.name}
                     </div>
                   </div>
                 </div>
