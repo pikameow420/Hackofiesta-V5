@@ -9,11 +9,11 @@ const Stats = () => {
   return (
     <ThemeProvider themeMode="dark">
       <div
-        className={`md:text-8xl ${myFont.className} sm:text-6xl text-5xl text-center`}
+        className={`md:text-8xl ${myFont.className} sm:text-6xl text-5xl text-center md:pt-32`}
       >
         TRACKS
       </div>
-      <div className="w-screen flex justify-center items-start p-6 pb-40">
+      <div className="w-screen flex justify-center items-start p-6 md:pb-40">
         <Features
           items={[
             {

@@ -82,14 +82,14 @@ const About = () => {
         className="flex flex-col"
       >
         <div
-          className="w-screen sm:pl-12 pr-8 ms-16 flex flex-col-reverse sm:flex-row items-center justify-around"
+          className="w-screen -mt-24  flex flex-col-reverse sm:flex-row items-center justify-around"
           style={{ height: "50vh" }}
         >
           <motion.div>
             <h1 className={`text-3xl mb-2 lg:mb-3 xl:-mb-1 text-center ${myFont.className} sm:text-5xl xl:text-6xl xl:mt-8 font-[mokoto]`}  >
               HackoFiesta
             </h1>
-            <div className="mr-4 sm:mr-0 text-gray-500 text-center sm:px-2 w-screen text-base xl:text-2xl lg:text-2xl xl:w-[500px] xl:p-6 md:text-2xl md:w-[350px] sm:text-xl sm:w-[250px] sm:ml-8 sm:p-0">
+            <div className="px-4 sm:mr-0 text-gray-500 text-center sm:px-2 w-screen text-base xl:text-2xl lg:text-2xl xl:w-[500px] xl:p-6 md:text-2xl md:w-[350px] sm:text-xl sm:w-[250px] sm:ml-8 sm:p-0">
               It is the biggest offline hackathon in Uttar Pradesh, conducted by IIIT
               Lucknow. Tune in to 36 hours of creativity, coding and collaboration
               leading to some of the most innovative hacks you have ever seen.

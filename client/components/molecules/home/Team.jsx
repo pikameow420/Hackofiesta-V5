@@ -53,7 +53,7 @@ export default function BasicTabs() {
 //   },[])
 
   return (
-    <div className="w-screen h-[80vh] flex items-center justify-center">
+    <div className="w-screen  flex items-center justify-center">
       <Box sx={{ width: "100%" }}>
         <Box
           sx={{

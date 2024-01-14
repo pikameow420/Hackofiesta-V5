@@ -633,3 +633,7 @@ flex-wrap: wrap !important;
     justify-content: center !important;
   }
 }
+
+.MuiBox-root{
+  padding: 0 !important;
+}
