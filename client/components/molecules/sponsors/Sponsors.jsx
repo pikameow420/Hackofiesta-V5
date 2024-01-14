@@ -40,7 +40,7 @@ const Card = ({ companyName,description,url }) => {
         <div className="text-4xl flex min-h-12 tracking-widest">
          <img src={url} className={"w-48"} />
         </div>
-        <div className="mt-8 text-base text-gray-500">
+        <div className="mt-8 text-base text-gray-300">
          {description}
         </div>
       </StyledDiv>
@@ -90,7 +90,7 @@ const Sponsors = () => {
         })}
       </div>
       <div className="sm:text-5xl text-3xl text-center text-white sm:mt-28 mt-12">💍 Platinum Sponsers</div>
-      <div className="flex flex-wrap gap-16  px-10 py-10 justify-center mt-4 sm:mx-10">
+      <div className="flex flex-wrap gap-16  px-10 py-10 justify-center mt-4 lg:mx-96">
           {Info2.map((ele)=><PlatinumCard companyName={ele.companyName} url={ele.url} name={ele.name}/>)}
       </div>
       <div className="sm:text-5xl text-3xl text-center text-white sm:mt-16 mt-7">🪙 Gold Sponser</div>

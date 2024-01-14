@@ -556,8 +556,8 @@ body{
   --size: 250px;
   --speed: 8s;
   --easing: cubic-bezier(0.8, 0.2, 0.2, 0.8);
-  width: 20%;
-  height: 70%;
+  width: 27%;
+  height: 40%;
   filter: blur(calc(var(--size) / 5));
   background-image: linear-gradient(#0a0e2f, #202977);
   /* animation: rotate var(--speed) var(--easing) alternate infinite; */
