@@ -2,28 +2,28 @@ import React from "react";
 import { myFont } from "../common/AnimatedTitle";
 const data = [
   {
-    title: "10 Lakh Prize Pool",
-    text: "A huge prize pool of 10 Lakh",
+    title: "💰 10 Lakh Prize Pool",
+    text: "Compete for a chance to win from the impressive 💰 10 Lakh Prize Pool. Engage in 🌐 world-class workshops led by top Web3 engineers.",
   },
   {
-    title: "1000+ Registrations",
-    text: "Over a thousand enthusiastic participants registered last year, showcasing the widespread interest and engagement in the hackathon",
+    title: "👥 1000+ registrations",
+    text: "Join a thriving community with 👥 1000+ registrations. Immerse yourself in 🌐 workshops led by top Web3 engineers.",
   },
   {
-    title: "60+ Projects",
-    text: "The hackathon witnessed the creation of more than 60 innovative projects last year, highlighting the diverse talents and ideas of the participants.",
+    title: "🚀 60+ Projects",
+    text: "Showcase your skills by contributing to 🚀 60+ innovative projects. Participate in 🌐 workshops led by leading Web3 engineers.",
   },
   {
-    title: "2,00,000+ Reach Across All Channels",
-    text: "The event reached an extensive audience, with a cumulative reach exceeding 2 lakh across various channels, creating a significant impact",
+    title: "🌐 2,00,000+ Reach Across All Channels",
+    text: "Gain exposure with a reach of 🌐 2,00,000+ across various channels. Dive into 🌐 workshops led by top Web3 engineers.",
   },
   {
-    title: "10+ Sessions",
-    text: "There were 10+ insightful sessions",
+    title: "🎓 10+ Sessions",
+    text: "Expand your knowledge with 🎓 10+ insightful sessions. Participate in 🌐 workshops led by esteemed Web3 engineers.",
   },
   {
-    title: "4 Successful Editions Already Hosted",
-    text: "With a track record of hosting four successful editions,this year we bring you HackoFiesta v5",
+    title: "🏆 4 Successful Editions Already Hosted",
+    text: "Join a legacy with 🏆 4 successful editions already hosted. Experience 🌐 top-notch workshops led by Web3 industry leaders.",
   },
 ];
 
