@@ -33,7 +33,7 @@ const RequestToJoin = () => {
       <h1
         className={`md:text-8xl ${myFont.className} sm:text-6xl text-5xl text-center`}
       >
-         PREVIOUS YEAR STATS  
+        PREVIOUS YEAR STATS
       </h1>
       <section>
         {data.map((item, index) => {
