@@ -2,20 +2,28 @@ import React from "react";
 import { myFont } from "../common/AnimatedTitle";
 const data = [
   {
-    title: "WORLDWIDE INTERACTION",
-    text: "Attend world-class workshops led by top engineers across Web3. Attend world-class workshops led by top engineers across Web3",
+    title: "10 Lakh Prize Pool",
+    text: "A huge prize pool of 10 Lakh",
   },
   {
-    title: "WORLDWIDE INTERACTION",
-    text: "Attend world-class workshops led by top engineers across Web3. Attend world-class workshops led by top engineers across Web3",
+    title: "1000+ Registrations",
+    text: "Over a thousand enthusiastic participants registered last year, showcasing the widespread interest and engagement in the hackathon",
   },
   {
-    title: "WORLDWIDE INTERACTION",
-    text: "Attend world-class workshops led by top engineers across Web3. Attend world-class workshops led by top engineers across Web3",
+    title: "60+ Projects",
+    text: "The hackathon witnessed the creation of more than 60 innovative projects last year, highlighting the diverse talents and ideas of the participants.",
   },
   {
-    title: "WORLDWIDE INTERACTION",
-    text: "Attend world-class workshops led by top engineers across Web3. Attend world-class workshops led by top engineers across Web3",
+    title: "2,00,000+ Reach Across All Channels",
+    text: "The event reached an extensive audience, with a cumulative reach exceeding 2 lakh across various channels, creating a significant impact",
+  },
+  {
+    title: "10+ Sessions",
+    text: "There were 10+ insightful sessions",
+  },
+  {
+    title: "4 Successful Editions Already Hosted",
+    text: "With a track record of hosting four successful editions,this year we bring you HackoFiesta v5",
   },
 ];
 const RequestToJoin = () => {
@@ -24,7 +32,7 @@ const RequestToJoin = () => {
       <h1
         className={`md:text-8xl ${myFont.className} sm:text-6xl text-5xl text-center`}
       >
-         PREVIOUS YEAR STATS
+         PREVIOUS YEAR STATS  
       </h1>
       <section>
         {data.map((item, index) => {
