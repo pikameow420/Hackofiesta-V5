@@ -97,7 +97,7 @@ const TextSplitEffect = () => {
   }
   return (
     <>
-      <div  className="w-screen my-64 flex justify-center items-start relative text-white">
+      <div  className="w-screen bg-black my-64 flex justify-center items-start relative text-white">
         <motion.div ref={ref}>
           {displayIt && (
             <>
