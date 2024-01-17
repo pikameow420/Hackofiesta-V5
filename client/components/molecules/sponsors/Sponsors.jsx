@@ -17,7 +17,7 @@ const Heading = () => {
         Past SPONSORS
       </div>
       <div className="text-2xl z-50 mb-10 font-thin sm:mt-3 mt-2 mx-7 text-center text-white max-w-[600px]">
-        Our generous sponsors making Hackofiesta 5.0 possible.
+         Huge thanks to our generous sponsors for making Hackofiesta 4 possible.
       </div>
     </div>
   );
