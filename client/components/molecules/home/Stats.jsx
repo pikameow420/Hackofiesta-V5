@@ -12,46 +12,46 @@ const Stats = () => {
       <div
         className={`md:text-8xl ${myFont.className} sm:text-6xl text-5xl text-center md:pt-32`}
       >
-        TRACKS
+        DOMAINS
       </div>
       <div className="w-screen flex justify-center items-start p-6 md:pb-40">
         <Features
           items={[
             {
               description:
-                "Build decentralized apps and smart contracts using blockchain technology.",
+                "Develop innovative solutions that address environmental challenges and promote sustainable practices for a greener future.",
               icon: Zap,
-              title: "BLOCKCHAIN",
+              title: "SUSTAINABILITY",
             },
             {
               description:
-                " Create captivating games with innovative features and immersive experiences",
+                "Harness technology to create impactful and scalable solutions that address social issues, fostering positive change and community well-being.",
               icon: Zap,
-              title: "GAME DEVELOPMENT",
+              title: "SOCIAL GOOD",
             },
             {
               description:
-                "Develop intelligent solutions using AI and ML technologies.",
+                "Leverage Generative Artificial Intelligence and Machine Learning to develop applications that enhance automation, analysis, and decision-making.",
               icon: MoonStar,
-              title: "AI & ML",
+              title: "AI/ML",
             },
             {
               description:
-                "Build scalable applications leveraging cloud services and modern computing paradigms.",
+                " Dive into the world of smart contracts, DeFi protocols and the decentralized web. Unchain your imagination and build the next frontier of the internet",
               icon: Palette,
-              title: "CLOUD COMPUTING",
+              title: "BLOCKCHAIN & wEB3",
             },
             {
               description:
-                "Innovate in education technology to improve learning experiences and collaboration.",
+                "Tackle real-world business challenges and develop innovative solutions that can be scaled into full-fledged startups.",
               icon: Zap,
-              title: "EDUCATION",
+              title: "BUSINESS INNOVATION",
             },
             {
               description:
-                " Think creatively and push boundaries to develop solutions with significant impact",
+                "Whether your project spans emerging technologies (e.g AR/VR) , unique problem-solving, or uncharted territories, this track welcomes diverse and boundary-pushing ideas. ",
               icon: MoonStar,
-              title: "INNOVATION",
+              title: "OPEN",
             },
           ]}
           // itemStyle={{ width:"500px",height:"500px" }}
